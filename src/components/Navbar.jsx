@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 //const [navbar, setNavbar] = useState(false);
 
 const Tab = [
@@ -40,7 +41,7 @@ const Nav1 = () => {
               name="property"
               className="hover:text-red-300 hover:cursor-pointer transition-all duration-300 hover:ease-in  font-semibold "
             >
-              Property
+              <Link href="/property">Property</Link>
             </li>
             <li
               name="projects"
