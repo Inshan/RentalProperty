@@ -40,7 +40,7 @@ const Nav1 = () => {
               name="projects"
               className="hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              projects
+              Blog
             </li>
             <li
               name="contact"
@@ -72,7 +72,7 @@ const Nav1 = () => {
         </div>
 
         <div>
-          <Ham/>
+          <Ham />
         </div>
       </nav>
     </>

@@ -20,26 +20,26 @@ const Footer = () => {
                 </h5>
                 <div className="mt-6 lg:mb-0 mb-6">
                   <button
-                    className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                    className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2  hover:scale-105 hover:transition-all "
                     type="button"
                   >
                     <TwitterIcon />
                   </button>
                   <button
-                    className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                    className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2  hover:scale-105 hover:transition-all "
                     type="button"
                   >
-                    <LinkedinIcon />
+                    <LinkedinIcon className=" hover:scale-105 hover:transition-all" />
                   </button>
                   <button
-                    className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                    className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2  hover:scale-105 hover:transition-all "
                     type="button"
                   >
                     {" "}
                     <FaceBook />{" "}
                   </button>
                   <button
-                    className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                    className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2  hover:scale-105 hover:transition-all "
                     type="button"
                   >
                     <Pintrest />
