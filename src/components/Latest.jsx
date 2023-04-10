@@ -1,10 +1,10 @@
 import React from "react";
-import Pdata from "./data/Pdata";
+import Ldata from "../components/data/Ldata";
 
-const Featured = () => {
+const Latest = () => {
   return (
     <>
-      {Pdata.cardData.map((value, index) => (
+      {Ldata.cardData.map((value, index) => (
         <div
           key={index}
           className=" w-72 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 gap-8"
@@ -47,4 +47,4 @@ const Featured = () => {
   );
 };
 
-export default Featured;
+export default Latest;

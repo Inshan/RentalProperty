@@ -1,5 +1,5 @@
 import React from "react";
-import { TwitterIcon, LinkedinIcon, Github, Pintrest } from "./Icons";
+import { TwitterIcon, LinkedinIcon, Pintrest, FaceBook } from "./Icons";
 
 const Footer = () => {
   return (
@@ -35,7 +35,8 @@ const Footer = () => {
                     className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                     type="button"
                   >
-                    <Github />
+                    {" "}
+                    <FaceBook />{" "}
                   </button>
                   <button
                     className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
@@ -73,7 +74,7 @@ const Footer = () => {
                           className="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                           href="https://www.github.com/creativetimofficial?ref=njs-profile"
                         >
-                          Github
+                          Facebook
                         </a>
                       </li>
                       <li>

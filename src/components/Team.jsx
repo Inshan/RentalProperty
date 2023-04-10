@@ -1,21 +1,13 @@
-// import {
-//   CardList1,
-//   CardList2,
-//   CardList3,
-//   CardList4,
-//   CardList5,
-// } from "./ClientCardList";
-// import CardList from "./ClientCardList";
-import Pdata from "./data/Pdata";
+import Adata from "./data/Adata";
 //import Featured from "./Featured";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
 //import "./styles.css";
-import { Pagination } from "swiper";
 
 const Team = () => {
   return (
@@ -23,72 +15,200 @@ const Team = () => {
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
+        // centeredSlides={true}
         className="mySwiper"
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        navigation={false}
+        modules={[Autoplay, Navigation]}
       >
-        {Pdata.cardData.map((value, index) => (
-          <SwiperSlide>
-            <div
-              key={index}
-              className=" w-72 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 gap-8"
-            >
-              <a href="#">
-                <img className="rounded-t-lg  " src={value.img} alt="img" />
-              </a>
-              <div class="p-5">
-                <a href="#">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Noteworthy technology acquisitions 2021
-                  </h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
-                </p>
-                <a
-                  href="#"
-                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Read more
-                  <svg
-                    aria-hidden="true"
-                    class="w-4 h-4 ml-2 -mr-1"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
+        {Adata.cardData.map((value, index) => (
+          <SwiperSlide key={index}>
+            <div>
+              <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div className="flex justify-end px-4 pt-4">
+                  {/* Dropdown menu */}
+                  <div
+                    id="dropdown"
+                    className="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
                   >
-                    <path
-                      fillRule="evenodd"
-                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </a>
+                    <ul className="py-2" aria-labelledby="dropdownButton">
+                      <li>
+                        <a
+                          href="#"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >
+                          Edit
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >
+                          Export Data
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >
+                          Delete
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="flex flex-col items-center pb-10">
+                  <img
+                    className="w-28 h-28 mb-3 rounded-full shadow-lg"
+                    src={value.img}
+                    alt="Bonnie image"
+                  />
+                  <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                    {value.name}
+                  </h5>
+                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                    {value.post}
+                  </span>
+
+                  <div className="px-12 text-justify mt-4">
+                    <p>{value.desc}</p>
+                  </div>
+                </div>
               </div>
             </div>
           </SwiperSlide>
         ))}
-
-        {/* <SwiperSlide>
-          <Featured/>
-        </SwiperSlide> */}
-        {/* <SwiperSlide>
-          <CardList2 />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardList3 />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardList4 />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardList5 />
-        </SwiperSlide> */}
       </Swiper>
     </>
   );
 };
 export default Team;
+
+export const Team1 = () => {
+  return (
+    <>
+      <Swiper
+        slidesPerView={2}
+        spaceBetween={30}
+        // centeredSlides={true}
+        className="mySwiper"
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        navigation={false}
+        modules={[Autoplay, Navigation]}
+      >
+        {Adata.cardData.map((value, index) => (
+          <SwiperSlide key={index}>
+            <div>
+              <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div className="flex justify-end px-4 pt-4">
+                  {/* Dropdown menu */}
+                  <div
+                    id="dropdown"
+                    className="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+                  >
+                    <ul className="py-2" aria-labelledby="dropdownButton">
+                      <li>
+                        <a
+                          href="#"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >
+                          Edit
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >
+                          Export Data
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          className="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >
+                          Delete
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="flex flex-col items-center pb-10">
+                  <img
+                    className="w-24 h-24 mb-3 rounded-full shadow-lg"
+                    src={value.img}
+                    alt="Bonnie image"
+                  />
+                  <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                    {value.name}
+                  </h5>
+                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                    {value.post}
+                  </span>
+
+                  <div className="px-12 text-justify mt-4">
+                    <p>{value.desc}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
+  );
+};
+
+export const Team2 = () => {
+  return (
+    <>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        // centeredSlides={true}
+        className="mySwiper"
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        navigation={false}
+        modules={[Autoplay, Navigation]}
+      >
+        {Adata.cardData.map((value, index) => (
+          <SwiperSlide key={index}>
+            <div>
+              <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div className="flex flex-col  items-center pb-5 py-10 ">
+                  <img
+                    className="w-28 h-28 mb-3 rounded-full shadow-lg"
+                    src={value.img}
+                    alt="Bonnie image"
+                  />
+                  <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                    {value.name}
+                  </h5>
+                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                    {value.post}
+                  </span>
+
+                  <div className="px-12 text-justify  mt-4 min-w-full ">
+                    <p>{value.desc}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
+  );
+};
