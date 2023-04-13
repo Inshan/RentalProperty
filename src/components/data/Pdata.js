@@ -48,7 +48,13 @@ const Pdata = {
       imgtitle: "Collictibes",
       title: "Village Living",
       desc: "Experience the charm of village living with our idyllic escape, featuring peaceful surroundings and cozy accommodations.",
-      images: ["/images/fimg/pic3.png", "/images/fimg/VillageLiving/pic1.png"],
+      images: [
+        "/images/fimg/pic3.png",
+        "/images/fimg/VillageLiving/pic1.png",
+        "/images/fimg/VillageLiving/pic2.png",
+        "/images/fimg/VillageLiving/pic3.png",
+        "/images/fimg/VillageLiving/pic4.png",
+      ],
     },
     {
       id: 5,
