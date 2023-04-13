@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Mainimg from "../../public/images/mainimg.png";
-import Subimg from "../../public/images/subimg.png";
+//import Subimg from "../../public/images/subimg.png";
 
 const Hero = () => {
-  console.log(Mainimg);
+  // console.log(Mainimg);
+  const [bounce, setBounce] = useState("animate-bounce");
+
+  // const handleBounce = () => {
+  //   setTimeout(() => {
+  //     setBounce("animate-bounce");
+  //   }, 100);
+  // };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setBounce("");
+    }, 3200);
+  }, []);
+
   return (
     <>
       {/* component */}
@@ -16,22 +30,23 @@ const Hero = () => {
         >
           <div className="container mx-auto text-left text-white">
             <div className="flex items-center">
-              <div className="w-1/2">
-                <h1 className="text-5xl font-medium mb-6">
-                  Welcome to My Agency
+              <div className="w-2/3">
+                <h1 className={`text-5xl font-medium mb-6 ml-8 ${bounce}`}>
+                  Explore our properties and find yours
                 </h1>
-                <p className="text-xl mb-12">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                  viverra euismod odio, gravida pellentesque urna varius vitae.
+                <p className="text-xl mb-12 ml-6">
+                  Search your dream home in Nepal’s Largest Property Market .
+                  you can easily search, compare, and find your perfect property
+                  in just a few clicks.
                 </p>
                 <a
                   href="#"
-                  className="bg-indigo-500 text-white py-4 px-12 rounded-full hover:bg-indigo-600"
+                  className="bg-indigo-500 text-white py-4 px-10 rounded-full hover:bg-indigo-600 text-2xl "
                 >
-                  Demo
+                  Explore
                 </a>
               </div>
-              <div className="w-1/2 pl-16">
+              <div className="w-1/2 pl-16 hidden sm:flex ">
                 <img
                   src="../../images/subimg.png"
                   className="h-64 w-full object-cover rounded-xl"
