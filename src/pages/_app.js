@@ -1,7 +1,14 @@
 import '@/styles/globals.css'
 import Head from "next/head";
+import { useEffect } from "react";
 
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    const importTE = async () => {
+      (await import("tw-elements")).default;
+    };
+    importTE();
+  }, []);
   <Head>
     <link
       rel="stylesheet"

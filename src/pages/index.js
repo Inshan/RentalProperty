@@ -18,7 +18,6 @@ const index = () => {
     <Layout>
       <div>
         <Hero />
-
         <div className="bg-slate-100 hidden sm:flex ">
           <Search />
         </div>

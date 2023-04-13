@@ -59,4 +59,5 @@ const Adata = {
   ],
 };
 
+//console.log(filteredData);
 export default Adata;
