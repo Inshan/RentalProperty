@@ -39,7 +39,7 @@ const Contact = () => {
                     />
                   </svg>
                   <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                    Acme Inc, Street, State, Postal Code
+                    Bouddha, pipalbot, kathmandu, 44600
                   </div>
                 </div>
                 <div className="flex items-center mt-4 text-gray-600 dark:text-gray-400">
@@ -60,7 +60,7 @@ const Contact = () => {
                     />
                   </svg>
                   <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                    +44 1234567890
+                    9800000000
                   </div>
                 </div>
                 <div className="flex items-center mt-2 text-gray-600 dark:text-gray-400">
@@ -81,7 +81,7 @@ const Contact = () => {
                     />
                   </svg>
                   <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                    info@acme.org
+                    meerakoservices@gmail.com
                   </div>
                 </div>
               </div>
