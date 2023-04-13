@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 //import { GiHamburgerMenu } from "react-icons/gi";
 import { Ham } from "./Icons";
 //const [navbar, setNavbar] = useState(false);
@@ -16,25 +17,25 @@ const Nav1 = () => {
               name="home"
               className="hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              home
+              <Link href="/">Home</Link>
             </li>
             <li
               name="about"
               className="hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              about
+           <Link href="/aboutus">About Us</Link>
             </li>
             <li
               name="services"
               className="hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              services
+            <Link href="/services">Services</Link>
             </li>
             <li
               name="property"
               className="hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in  font-semibold "
             >
-              Property
+              <Link href="/property">Property</Link>
             </li>
             <li
               name="projects"
