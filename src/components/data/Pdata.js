@@ -55,8 +55,8 @@ const Pdata = {
       imgtitle: "Photography",
       footleft: "1.7 BNB",
       footright: "1of1",
-    },
-  ],
+    }
+  ]
 };
 
 export default Pdata;

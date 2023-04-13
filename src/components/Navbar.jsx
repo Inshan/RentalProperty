@@ -23,19 +23,19 @@ const Nav1 = () => {
               name="home"
               className="hover:text-red-300 hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              home
+              <Link href="/">Home</Link>
             </li>
             <li
               name="about"
               className="hover:text-red-300 hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              about
+           <Link href="/aboutus">About Us</Link>
             </li>
             <li
               name="services"
               className="hover:text-red-300 hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              services
+            <Link href="/services">Services</Link>
             </li>
             <li
               name="property"

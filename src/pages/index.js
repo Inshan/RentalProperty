@@ -8,6 +8,8 @@ import Trendingprop from "@/components/Trendingprop";
 import Searchimg from "../../public/images/searchimg.png";
 import Explore from "@/components/Explore";
 import Featured from "@/components/Featured";
+import Blog from "@/components/blog";
+import Services from "@/components/services";
 
 const index = () => {
   return (
@@ -57,6 +59,8 @@ const index = () => {
           <Contact />
         </div>
       </div>
+      {/* <Services/> */}
+      {/* <Blog /> */}
     </Layout>
   );
 };
