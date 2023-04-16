@@ -30,8 +30,8 @@ const index = () => {
           className="w-full hidden sm:block "
           style={{ backgroundImage: `url(${Searchimg.src})` }}
         >
-          <h1 className="py-72 text-5xl text-lime-  font-bold text-center -translate-y-1/4 ml-96 animate-pulse">
-            <span className="bg-gray-400 bg-opacity-80 leading-loose p-4 px-8 rounded-md ">
+          <h1 className="py-72 text-5xl text-lime-  font-bold text-center -translate-y-1/4 ml-96 ">
+            <span className="bg-gray-400 bg-opacity-10 leading-loose p-4 px-8 rounded-md animate-pulse ">
               Your Ideal Property <br />
               &nbsp; Awaits You
             </span>

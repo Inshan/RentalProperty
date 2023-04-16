@@ -27,13 +27,13 @@ const Trendingprop = () => {
         <div className="flex flex-wrap">
           {Tdata.cardData.map((value, index) => (
             <SwiperSlide key={index}>
-              <div className="w-full  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <div className="w-full  bg-white border border-gray-200 rounded-lg shadow ">
                 <a href="#">
                   <img className="rounded-t-lg" src={value.img} alt="" />
                 </a>
                 <div className="p-5">
                   <a href="#">
-                    <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 ">
                       {value.title}
                     </h5>
                   </a>

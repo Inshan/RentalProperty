@@ -100,7 +100,7 @@ export const FaceBook = ({ className, ...rest }) => (
     xmlns="http://www.w3.org/2000/svg"
     width={18}
     height={20}
-    viewBox="0 0 16 18"
+    viewBox="0 0 16 15"
     fill="currentColor"
     className={`w-full h-auto ${className}`}
     style={{

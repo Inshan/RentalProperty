@@ -13,7 +13,7 @@ const Search = () => {
             <button
               data-tooltip-target="tooltip-animation"
               type="button"
-              className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-12 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-12 py-3 text-center"
             >
               BUY
             </button>
@@ -31,7 +31,7 @@ const Search = () => {
             <button
               data-tooltip-target="tooltip-animation"
               type="button"
-              className="text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-12 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-12 py-3 text-center "
             >
               RENT
             </button>
