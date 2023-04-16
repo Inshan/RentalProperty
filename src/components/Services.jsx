@@ -48,14 +48,11 @@ const Services_try = () => {
     </div>
   
   </div>
-  <div className="w-full   bg-indigo-600 shadow-xl shadow-indigo-200 py-10 px-20 flex justify-between items-center">
-    <p className=" text-white"> <span className="text-4xl font-medium">Still Confused ?</span> <br /> <span className="text-lg">Book For Free Career Consultation Today ! </span></p>
-    <button className="px-5 py-3  font-medium text-slate-700 shadow-xl  hover:bg-white duration-150  bg-yellow-400">BOOK AN APPOINTMENT </button>
+  <div className="flex flex-wrap w-full bg-indigo-600 shadow-xl shadow-indigo-200 py-10 px-10 justify-between items-center text-sm">
+    <p className=" text-white"> <span className="md:text-4xl font-medium flex flex-wrap text-xl"><div className="flex-1">Still Confused ?</div></span> <br /> <span className="text-lg">Book For Free Career Consultation Today ! </span></p>
+    <button className="px-3 py-3  font-medium shadow-xl  hover:bg-white duration-150  bg-yellow-400">BOOK AN APPOINTMENT </button>
   </div>
 </div>
-
-
-
         </div>
     </>
   );
