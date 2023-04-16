@@ -7,13 +7,13 @@ const Search = () => {
   const [query, setQuery] = useState("");
   return (
     <>
-      <div className="w-1/2  -translate-y-1/4  bg-gray-100    mx-auto center h-auto border-2  border-none rounded-t p-8  ">
+      <div className="w-1/2  -translate-y-1/2  bg-gray-100    mx-auto center h-auto border-2  border-none rounded-t p-8  ">
         <div className="flex items-center justify-around ">
           <div>
             <button
               data-tooltip-target="tooltip-animation"
               type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-12 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-12 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               BUY
             </button>
@@ -31,7 +31,7 @@ const Search = () => {
             <button
               data-tooltip-target="tooltip-animation"
               type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-12 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-12 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               RENT
             </button>
@@ -49,7 +49,7 @@ const Search = () => {
             <button
               data-tooltip-target="tooltip-animation"
               type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-12 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white bg-amber-600 hover:bg-orange-800  focus:outline-none font-medium rounded-lg text-sm px-12 py-3 text-center"
             >
               SELL
             </button>

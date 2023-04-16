@@ -13,45 +13,45 @@ const Nav1 = () => {
 
   return (
     <>
-      <nav className=" hidden sticky top-0  z-50 lg:flex items-center justify-around w-full h-20 bg-teal-50 bg-opacity-100">
+      <nav className=" hidden sticky top-0  z-50 lg:flex items-center justify-around w-full h-16 bg-teal-50 bg-opacity-100">
         <div>
-          <img src="../../images/logo1.png" />
+          <img src="../../images/logo1.png" height={160} width={160} />
         </div>
         <div>
           <ul className="flex items-center justify-center gap-8 uppercase">
             <li
               name="home"
-              className="hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
+              className="hover:text-blue-600  antialiased text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
               <Link href={"/"}>home</Link>
             </li>
             <li
               name="about"
-              className="hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
+              className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
               <Link href={"/about"}>about</Link>
             </li>
             <li
               name="services"
-              className="hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
+              className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
               <Link href={"/services"}>services</Link>
             </li>
             <li
               name="services"
-              className="hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in  font-semibold "
+              className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in  font-semibold "
             >
               <Link href={"/property"}>property</Link>
             </li>
             <li
               name="property"
-              className="hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
+              className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
               <Link href={"/blog"}>blog</Link>
             </li>
             <li
               name="contact"
-              className="hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
+              className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
               <Link href={"/contact"}>contact</Link>
             </li>
@@ -60,13 +60,13 @@ const Nav1 = () => {
         <div className="flex items-center justify-center gap-8">
           <button
             type="button"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            className="text-white mt-2 bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
             LogIn
           </button>
           <button
             type="button"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            className="text-white mt-2 bg-blue-700 hover:bg-blue-800  font-medium rounded-lg text-sm px-5 py-2 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700"
           >
             SignUp
           </button>

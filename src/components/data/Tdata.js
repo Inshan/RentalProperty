@@ -18,7 +18,7 @@ const Tdata = {
       id: 19,
       img: "/images/tred/tredpic3.png",
       imgtitle: "living room",
-      title: " Contemporary Residence",
+      title: " Residence",
       desc: "Experience the epitome of modern living with our contemporary residences with sleek and stylish designs.",
     },
     {

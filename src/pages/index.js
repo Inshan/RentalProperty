@@ -40,10 +40,10 @@ const index = () => {
         <Explore />
         <div className=" px-16 bg-green-50 mx-0  pb-16 ">
           <h1 className="text-3xl font-bold uppercase text-center pb-16 ">
-            Trending Properties
+            Latest Properties
           </h1>
           <div>
-            <div className="hidden lg:flex ">
+            <div className="hidden lg:flex px-10 ">
               <Trendingprop />
             </div>
             <div className="hidden sm:flex  lg:hidden ">
@@ -57,30 +57,20 @@ const index = () => {
 
         <div className="bg-slate-500">
           <h1 className="text-3xl text-white font-bold uppercase text-center pb-8 pt-12">
-            Featured Properties
+            Trending Properties
           </h1>
 
-          <div className="flex flex-wrap items-center justify-center bg-slate-500 gap-6 py-8 px-10">
+          <div className="flex flex-wrap items-center justify-evenly bg-slate-500 gap-6 py-8 px-16">
             <Featured />
           </div>
         </div>
 
         <div className="bg-slate-500">
           <h1 className="text-3xl text-white font-bold uppercase text-center pb-8 pt-12">
-            Recomended Properties
+            Desirable Properties
           </h1>
 
-          <div className="flex flex-wrap items-center justify-center bg-slate-500 gap-6 py-8 px-10">
-            <Recomended />
-          </div>
-        </div>
-
-        <div className="bg-slate-500">
-          <h1 className="text-3xl text-white font-bold uppercase text-center pb-8 pt-12">
-            Latest Properties
-          </h1>
-
-          <div className="flex flex-wrap items-center justify-center bg-slate-500 gap-6 py-8 px-10">
+          <div className="flex flex-wrap items-center justify-evenly bg-slate-500 gap-6 py-8 px-10">
             <Recomended />
           </div>
         </div>

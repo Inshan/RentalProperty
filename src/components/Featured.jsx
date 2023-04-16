@@ -15,7 +15,7 @@ const Featured = () => {
       {Pdata.cardData.map((value, index) => (
         <div
           key={index}
-          className=" w-72 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 gap-8 hover:scale-105 hover:transition-all "
+          className=" w-64 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 gap-20 hover:scale-105 hover:transition-all "
           onClick={() => {
             handleClick(index);
           }}
@@ -25,18 +25,18 @@ const Featured = () => {
           </a>
           <div className="p-5">
             <a href="#">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {value.title}
               </h5>
             </a>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p className="mb-3 text-xs text-gray-700 dark:text-gray-400">
               {value.desc}
             </p>
             <a
               href="#"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
-              Buy Now
+              Quote Now
               <svg
                 aria-hidden="true"
                 className="w-4 h-4 ml-2 -mr-1"
