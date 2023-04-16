@@ -9,38 +9,36 @@ const property = () => {
   return (
     <Layout>
       <div>
-        <div>
-          {/* Section: Design Block */}
-          <section className=" text-gray-800 text-center lg:text-left background-radial-gradient">
+        {/* Section: Design Block */}
+        <section className=" text-gray-800 text-center lg:text-left background-radial-gradient">
+          <div
+            className="relative overflow-hidden bg-no-repeat bg-cover"
+            style={{
+              backgroundPosition: "50%",
+              backgroundImage: `url(${PropertyBg.src})`,
+              height: 500,
+            }}
+          >
             <div
-              className="relative overflow-hidden bg-no-repeat bg-cover"
-              style={{
-                backgroundPosition: "50%",
-                backgroundImage: `url(${PropertyBg.src})`,
-                height: 500,
-              }}
+              className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+              style={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}
             >
-              <div
-                className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
-                style={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}
-              >
-                <div className="flex justify-center items-center h-full">
-                  <div className="text-center text-white px-6 py-6 md:py-0 md:px-12 max-w-[800px]">
-                    <h2 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-tight mb-12">
-                      Discover Your Dream <br />
-                      <span> Home</span>
-                    </h2>
-                    <p className="text-lg">
-                      Unlock the Door to Your Perfect Rental with Us by Finding
-                      the Key to Your Ideal Home Today!
-                    </p>
-                  </div>
+              <div className="flex justify-center items-center h-full">
+                <div className="text-center text-white px-6 py-6 md:py-0 md:px-12 max-w-[800px]">
+                  <h2 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-tight mb-12">
+                    Discover Your Dream <br />
+                    <span> Home</span>
+                  </h2>
+                  <p className="text-lg">
+                    Unlock the Door to Your Perfect Rental with Us by Finding
+                    the Key to Your Ideal Home Today!
+                  </p>
                 </div>
               </div>
             </div>
-          </section>
-          {/* Section: Design Block */}
-        </div>
+          </div>
+        </section>
+        {/* Section: Design Block */}
 
         {/* for large Screen */}
 
@@ -122,9 +120,9 @@ const property = () => {
                   All Properties
                 </h1>
               </div>
-              <section className="flex flex-wrap gap-8 items-center justify-center overflow-auto h-full pb-20 ">
+              <section className="flex flex-wrap gap-8 items-center justify-center overflow-auto h-full pb-0 ">
                 <div className="p-8 gap-8 flex flex-wrap items-center justify-center overflow-hidden ">
-                  <Featured />
+                  <Featured className="overflow-hidden" />
                 </div>
               </section>
             </div>

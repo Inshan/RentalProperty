@@ -12,13 +12,17 @@ import Searchimg from "../../public/images/searchimg.png";
 import Explore from "@/components/Explore";
 import Featured from "@/components/Featured";
 import Recomended from "@/components/Recomended";
+import SearchBg from "../../public/images/sbg.png";
 
 const index = () => {
   return (
     <Layout>
       <div>
         <Hero />
-        <div className="bg-slate-100 hidden sm:flex ">
+        <div
+          className="bg-transparent hidden sm:flex py-10 "
+          style={{ backgroundImage: `url(${SearchBg.src})` }}
+        >
           <Search />
         </div>
 

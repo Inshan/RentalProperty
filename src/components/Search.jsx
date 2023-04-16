@@ -7,7 +7,7 @@ const Search = () => {
   const [query, setQuery] = useState("");
   return (
     <>
-      <div className="w-1/2  -translate-y-1/3 ml-64 center h-auto border-2 bg-gray-50 border-none rounded-t p-8 drop-shadow-md ">
+      <div className="w-1/2  -translate-y-1/4  bg-gray-100    mx-auto center h-auto border-2  border-none rounded-t p-8  ">
         <div className="flex items-center justify-around ">
           <div>
             <button
@@ -106,17 +106,17 @@ const Search = () => {
               </div>
             </div>
           </div>
-          <div className="ml-24">
+          {/* <div className="ml-24 ">
             <ul className="list">
               {Users.filter((asd) =>
                 asd.plocation.toLowerCase().includes(query)
               ).map((user) => (
-                <li className="listItem" key={user.id}>
+                <li className="listItem " key={user.id}>
                   {user.plocation}
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
