@@ -1,13 +1,13 @@
 import React from 'react'
 import Layout from './Layout'
-import Aboutuscards from '@/components/Aboutuscards'
+import Aboutus from '@/components/Aboutus'
 
 const aboutuscard = () => {
   return (
     <>
     <div>
       <Layout>
-        <Aboutuscards/>
+        <Aboutus/>
       </Layout>
     </div>
     </>

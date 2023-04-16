@@ -7,7 +7,7 @@ import { Ham } from "./Icons";
 const Nav1 = () => {
   return (
     <>
-      <nav className=" hidden sticky top-0  z-50 lg:flex items-center justify-around w-full h-20 bg-teal-50 bg-opacity-100">
+      <nav className="hidden sticky top-0  z-50 lg:flex items-center justify-around w-full h-20 bg-teal-50 bg-opacity-100">
         <div>
           <img src="../../images/logo1.png" />
         </div>
