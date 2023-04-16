@@ -41,13 +41,13 @@ const Nav1 = () => {
               name="projects"
               className="hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              Blog
+            <Link href="/blog">Blog</Link>
             </li>
             <li
               name="contact"
               className="hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              contact
+             <Link href="/contact">Contact US</Link>
             </li>
           </ul>
         </div>
