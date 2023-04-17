@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "./Layout";
 import Hero from "@/components/Hero";
 import Team, { Team1, Team2 } from "@/components/Team";
-import Search from "@/components/Search";
+import SearchBar from "@/components/SearchBar";
 import Contact from "@/components/Contact";
 import Trendingprop, {
   Trendingprop1,
@@ -19,12 +19,6 @@ const index = () => {
     <Layout>
       <div>
         <Hero />
-        <div
-          className="bg-transparent hidden sm:flex py-10 "
-          style={{ backgroundImage: `url(${SearchBg.src})` }}
-        >
-          <Search />
-        </div>
 
         <div
           className="w-full hidden sm:block "
@@ -70,7 +64,7 @@ const index = () => {
             Desirable Properties
           </h1>
 
-          <div className="flex flex-wrap items-center justify-evenly bg-slate-500 gap-6 py-8 px-10">
+          <div className="flex flex-wrap items-center justify-evenly bg-slate-500 gap-6 py-8 px-16 pb-14 ">
             <Recomended />
           </div>
         </div>

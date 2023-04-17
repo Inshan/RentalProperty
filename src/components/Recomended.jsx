@@ -24,9 +24,7 @@ const Recomended = () => {
                 {value.title}
               </h5>
             </a>
-            <p className="mb-3  text-xs text-gray-700">
-              {value.desc}
-            </p>
+            <p className="mb-3  text-xs text-gray-700">{value.desc}</p>
             <a
               href="#"
               className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 "

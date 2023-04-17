@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
+import Selector from "./DropSelect";
 import Mainimg from "../../public/images/mainimg.png";
+import SearchBar from "./SearchBar";
+//import SearchBar from "./SearchBar";
 //import Subimg from "../../public/images/subimg.png";
 
 const Hero = () => {
@@ -21,9 +24,9 @@ const Hero = () => {
   return (
     <>
       {/* component */}
-      <div className="h-screen-min bg-gray-50 flex items-center">
-        <section
-          className="bg-cover bg-center py-32 w-full"
+      <div className="h-screen-max  bg-gray-50 flex items-center">
+        <div
+          className="bg-cover bg-center py-16 pt-20 w-full h-full "
           style={{
             backgroundImage: `url(${Mainimg.src})`,
           }}
@@ -57,7 +60,21 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </section>
+          <div className="flex justify-center mt-20 gap-16 flex-wrap ">
+            <div>
+              <Selector />
+            </div>
+            <div>
+              <Selector />
+            </div>
+            <div>
+              <Selector />
+            </div>
+            <div>
+              <SearchBar />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

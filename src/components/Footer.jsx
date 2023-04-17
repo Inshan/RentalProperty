@@ -8,7 +8,7 @@ const Footer = () => {
         {/* component */}
 
         <footer className="relative bg-blueGray-200 pt-8 pb-6 bg-sky-950  ">
-          <div className="container mx-auto px-4">
+          <div className="container mx-16 px-4">
             <div className="flex flex-wrap text-left lg:text-left">
               <div className="w-full lg:w-6/12 px-4">
                 <h4 className="text-3xl fonat-semibold text-white">
@@ -35,8 +35,7 @@ const Footer = () => {
                     className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2  hover:scale-105 hover:transition-all "
                     type="button"
                   >
-                    {" "}
-                    <FaceBook />{" "}
+                    <FaceBook />
                   </button>
                   <button
                     className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2  hover:scale-105 hover:transition-all "
