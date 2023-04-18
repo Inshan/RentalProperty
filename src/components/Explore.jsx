@@ -5,8 +5,8 @@ const Explore = () => {
   // console.log(Exploreimg);
   return (
     <>
-      <div className="bg-teal-100 bg-opacity-25 lg:py-12 lg:flex lg:justify-center  ">
-        <div className="bg-cyan-50   lg:ml-62 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg  -translate-y-1/3">
+      <div className="bg-teal-100 bg-opacity-25 lg:flex lg:justify-center  ">
+        <div className="bg-cyan-50   lg:ml-62 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg  lg:-translate-y-1/3">
           <div className="lg:w-1/2">
             <div
               className="h-64 bg-cover lg:rounded-lg lg:h-full"

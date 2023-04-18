@@ -7,27 +7,23 @@ const Recomended = () => {
       {Rdata.cardData.map((value, index) => (
         <div
           key={index}
-          className=" w-64 bg-white border border-gray-200 rounded-lg shadow gap-8 hover:scale-105 hover:transition-all "
+          className=" lg:w-64 md:w-80 w-11/12 bg-white border border-gray-200 rounded-lg shadow gap-8 hover:scale-105 hover:transition-all "
         >
           <a href="#">
-            <img
-              className="rounded-t-lg  "
-              src={value.img}
-              alt="img"
-              height={300}
-              width={300}
-            />
+            <img className="rounded-t-lg  " src={value.img} alt="img" />
           </a>
           <div className="p-5">
             <a href="#">
-              <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 ">
+              <h5 className="mb-2 text-2xl  md:text-xl lg:text-xl font-bold tracking-tight text-gray-900 ">
                 {value.title}
               </h5>
             </a>
-            <p className="mb-3  text-xs text-gray-700">{value.desc}</p>
+            <p className="mb-3 text-sm md:text-sm lg:text-xs text-gray-700">
+              {value.desc}
+            </p>
             <a
               href="#"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 "
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-sm hover:bg-green-800 "
             >
               Quote Now
               <svg

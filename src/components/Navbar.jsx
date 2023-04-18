@@ -3,6 +3,15 @@ import React, { useState } from "react";
 import { Ham } from "./Icons";
 //const [navbar, setNavbar] = useState(false);
 import Link from "next/link";
+import {
+  BsHouseCheck,
+  BsInfoCircle,
+  BsHouseGear,
+  BsBuildings,
+  BsPerson,
+} from "react-icons/bs";
+
+import { AiOutlineEdit, AiOutlinePhone } from "react-icons/ai";
 
 const Nav1 = () => {
   const [nav, setNav] = useState(false);
@@ -13,7 +22,7 @@ const Nav1 = () => {
 
   return (
     <>
-      <nav className=" hidden sticky top-0  z-50 lg:flex items-center justify-between px-14 w-full h-16 bg-teal-50 bg-opacity-100">
+      <nav className=" hidden sticky top-0  z-50 lg:flex items-center justify-between lg:px-14 w-full h-16 bg-teal-50 bg-opacity-100">
         <div>
           <img src="../../images/logo1.png" height={160} width={160} />
         </div>
@@ -23,37 +32,64 @@ const Nav1 = () => {
               name="home"
               className="hover:text-blue-600  antialiased text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              <Link href={"/"}>home</Link>
+              <Link href={"/"}>
+                <div className="flex gap-1">
+                  home <BsHouseCheck className="text-xl" />
+                </div>
+              </Link>
             </li>
             <li
               name="about"
               className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              <Link href={"/about"}>about</Link>
+              <Link href={"/about"}>
+                {" "}
+                <div className="flex gap-1">
+                  about <BsInfoCircle className="text-xl" />
+                </div>
+              </Link>
             </li>
             <li
               name="services"
               className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              <Link href={"/services"}>services</Link>
+              <Link href={"/services"}>
+                {" "}
+                <div className="flex gap-1">
+                  services <BsHouseGear className="text-xl" />
+                </div>
+              </Link>
             </li>
             <li
               name="services"
               className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in  font-semibold "
             >
-              <Link href={"/property"}>property</Link>
+              <Link href={"/property"}>
+                {" "}
+                <div className="flex gap-1">
+                  property <BsBuildings className="text-xl" />
+                </div>
+              </Link>
             </li>
             <li
               name="property"
               className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              <Link href={"/blog"}>blog</Link>
+              <Link href={"/blog"}>
+                <div className="flex gap-1">
+                  blog <AiOutlineEdit className="text-xl" />
+                </div>
+              </Link>
             </li>
             <li
               name="contact"
               className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              <Link href={"/contact"}>contact</Link>
+              <Link href={"/contact"}>
+                <div className="flex gap-1">
+                  contact <BsPerson className="text-xl" />
+                </div>
+              </Link>
             </li>
           </ul>
         </div>
@@ -73,9 +109,9 @@ const Nav1 = () => {
         </div>
       </nav>
 
-      <nav className=" flex sticky top-0  z-50 lg:hidden items-center justify-around w-full h-20 bg-teal-50 bg-opacity-100">
+      <nav className=" flex sticky pl-4 pr-6  top-0  z-50 lg:hidden items-center justify-between w-full h-16 bg-teal-50 bg-opacity-100">
         <div>
-          <img src="../../images/logo1.png" />
+          <img src="../../images/logo1.png" height={160} width={160} />
         </div>
 
         <div onClick={() => setNav((prev) => !prev)} className="cursor-pointer">

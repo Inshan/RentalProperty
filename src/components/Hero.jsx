@@ -33,16 +33,18 @@ const Hero = () => {
         >
           <div className="container mx-auto text-left text-white">
             <div className="flex items-center">
-              <div className="w-2/3">
-                <h1 className={`text-5xl font-medium mb-6 ml-16 ${bounce}`}>
+              <div className="lg:w-1/2 w-full">
+                <h1
+                  className={`lg:text-5xl sm:text-3xl sm:mx-auto font-medium text-3xl mb-6 lg:ml-8 ${bounce}`}
+                >
                   Explore our properties and find yours
                 </h1>
-                <p className="text-xl mb-12 ml-16">
+                <p className="text-xl sm:text-xl sm:w-full  mb-12 lg:ml-8 ">
                   Search your dream home in Nepal’s Largest Property Market .
                   you can easily search, compare, and find your perfect property
                   in just a few clicks.
                 </p>
-                <div className="ml-16">
+                <div className="lg:m-8">
                   <a
                     href="#"
                     className="bg-orange-500 text-white py-3 px-8 rounded-full hover:bg-orange-600 text-2xl  "

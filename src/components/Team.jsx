@@ -28,40 +28,6 @@ const Team = () => {
           <SwiperSlide key={index}>
             <div>
               <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-                <div className="flex justify-end px-4 pt-4">
-                  {/* Dropdown menu */}
-                  <div
-                    id="dropdown"
-                    className="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
-                  >
-                    <ul className="py-2" aria-labelledby="dropdownButton">
-                      <li>
-                        <a
-                          href="#"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 "
-                        >
-                          Edit
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                        >
-                          Export Data
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100"
-                        >
-                          Delete
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
                 <div className="flex flex-col items-center pb-10">
                   <img
                     className="w-28 h-28 mb-3 rounded-full shadow-lg"

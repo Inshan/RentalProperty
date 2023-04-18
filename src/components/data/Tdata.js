@@ -5,6 +5,7 @@ const Tdata = {
       img: "/images/tred/tredpic1.png",
       imgtitle: "Bed room",
       title: "Single Flat",
+      category: "House",
       desc: "Explore our selection of private townhouses today and discover your new dream home!, Enjoy the luxury.",
     },
     {
@@ -12,6 +13,7 @@ const Tdata = {
       img: "/images/tred/tredpic4.png",
       imgtitle: "Bunglow",
       title: " Private Townhouse",
+      category: "Apartment",
       desc: " Discover the perfect combination of privacy, space, and community with private townhouses,  Enjoy the luxury.  ",
     },
     {
@@ -19,6 +21,7 @@ const Tdata = {
       img: "/images/tred/tredpic3.png",
       imgtitle: "living room",
       title: " Residence",
+      category: "Single-Room",
       desc: "Experience the epitome of modern living with our contemporary residences with sleek and stylish designs.",
     },
     {
@@ -26,6 +29,7 @@ const Tdata = {
       img: "/images/tred/tredpic2.png",
       imgtitle: "High-end Flats",
       title: "High-End Flats",
+      category: "House",
       desc: "Each unit is carefully crafted with the finest materials and finishes to create a one-of-a-kind living experience.",
     },
     {
@@ -33,6 +37,7 @@ const Tdata = {
       img: "/images/tred/tredpic5.png",
       imgtitle: "Elite apartments",
       title: "Elite Apartment",
+      category: "Room",
       desc: "Experience the ultimate in luxury living with our elite apartments. Exclusive units are designed according to needs",
     },
     {
@@ -40,6 +45,7 @@ const Tdata = {
       img: "/images/tred/tredpic6.png",
       imgtitle: "Bungalow",
       title: "Bungalow",
+      category: "Flat",
       desc: "Escape from the hustle and bustle of everyday life with our secluded retreats,  Enjoy the luxury and live life.  ",
     },
     {
@@ -47,6 +53,7 @@ const Tdata = {
       img: "/images/tred/tredpic3.png",
       imgtitle: "Elegant Unit",
       title: "Rural Retreat",
+      category: "Office-Space",
       desc: "Experience the peace and serenity of the countryside with our rural retreats, Enjoy the luxury and live life .  ",
     },
     {
@@ -54,6 +61,7 @@ const Tdata = {
       img: "/images/tred/tredpic7.png",
       imgtitle: "Elite Residences",
       title: "Elite Residences",
+      category: "Apartment",
       desc: " These exclusive homes are designed for those who demand in terms of quality, comfort, and sophistication. ",
     },
   ],
