@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "./Layout";
 import Hero from "@/components/Hero";
-import Team from "@/components/Team";
+import Team from "@/components/Team_redo";
 import Search from "@/components/Search";
 import Contact from "@/components/Contact";
 import Trendingprop, {
@@ -14,6 +14,7 @@ import Featured from "@/components/Featured";
 import Blog from "@/components/blog";
 import Services from "@/components/services";
 import Recomended from "@/components/Recomended";
+import Team_redo from "@/components/Team_redo";
 
 const index = () => {
   return (
@@ -87,7 +88,7 @@ const index = () => {
             Realstate &nbsp;
             <span className="offset-1 text-indigo-400"> Agents </span>
           </h1>
-         <Team/>
+         <Team_redo/>
         </div>
         <div className="bg-lime-200  mb-0">
           <Contact />

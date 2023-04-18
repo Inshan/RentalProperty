@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 //import "./styles.css";
 
-const Team = () => {
+const Team_redo = () => {
   return (
     <div>
       {/* ---------------------------------------------------------------------------------------------- */}
@@ -127,4 +127,4 @@ const Team = () => {
     </div>
   )
 }
-export default Team
+export default Team_redo
