@@ -11,6 +11,8 @@ import Trendingprop, {
 import Searchimg from "../../public/images/searchimg.png";
 import Explore from "@/components/Explore";
 import Featured from "@/components/Featured";
+import Blog from "@/components/blog";
+import Services from "@/components/services";
 import Recomended from "@/components/Recomended";
 import SearchBg from "../../public/images/sbg.png";
 import RentOrBuy, {
@@ -109,6 +111,8 @@ const index = () => {
           <Contact />
         </div>
       </div>
+      {/* <Services/> */}
+      {/* <Blog /> */}
     </Layout>
   );
 };

@@ -9,7 +9,17 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        change: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform : 'translateX(0)' },
+        }
+      },
+        animation: {
+          'change': 'change 1s normal forwards ease-in',
+        }
+    },
   },
   plugins: [require("tw-elements/dist/plugin")],
 };

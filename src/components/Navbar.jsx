@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 //import { GiHamburgerMenu } from "react-icons/gi";
 import { Ham } from "./Icons";
 //const [navbar, setNavbar] = useState(false);
@@ -37,6 +38,7 @@ const Nav1 = () => {
                   home <BsHouseCheck className="text-xl" />
                 </div>
               </Link>
+              <Link href="/">Home</Link>
             </li>
             <li
               name="about"

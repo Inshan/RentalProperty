@@ -10,7 +10,7 @@ const Recomended = () => {
           className=" lg:w-64 md:w-80 w-11/12 bg-white border border-gray-200 rounded-lg shadow gap-8 hover:scale-105 hover:transition-all "
         >
           <a href="#">
-            <img className="rounded-t-lg  " src={value.img} alt="img" />
+            <img className="rounded-t-lg" src={value.img} alt="img" />
           </a>
           <div className="p-5">
             <a href="#">
