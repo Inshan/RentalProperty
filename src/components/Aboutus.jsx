@@ -67,8 +67,8 @@ const Aboutus = () => {
         <div className="px-4 py-2 mt-2">
         <img className='w-10 h-10 ml-1 md:ml-5' src="images/quotefront.png"/><h2 className="font-bold text-center text-lg md:text-4xl text-gray-800 tracking-normal">{value.title}
           <div className='px-10 md:px-5' >
-          <p className="font-normal text-gray-700 pt-5 mr-1 text-sm md:px-5 md:text-xl text-justify">{value.desc}<img src="images/quotebottom.png" className='w-10 h-10' /></p>
-          <div className="text-right text-sm">-{value.name}</div>
+          <p className="font-normal text-gray-700 pt-5 mr-1 text-lg md:px-5 md:text-xl text-justify">{value.desc}<img src="images/quotebottom.png" className='w-10 h-10' /></p>
+          <div className="text-right text-lg">-{value.name}</div>
           </div>
           </h2>
         </div>
