@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "./Layout";
 import Hero from "@/components/Hero";
-import Team, { Team1, Team2 } from "@/components/Team";
+import Team from "@/components/Team";
 import Search from "@/components/Search";
 import Contact from "@/components/Contact";
 import Trendingprop, {
@@ -20,11 +20,9 @@ const index = () => {
     <Layout>
       <div>
         <Hero />
-
         <div className="bg-slate-100 hidden sm:flex ">
           <Search />
         </div>
-
         <div
           className="w-full hidden sm:block "
           style={{ backgroundImage: `url(${Searchimg.src})` }}
@@ -84,21 +82,12 @@ const index = () => {
           </div>
         </div>
 
-        <div className="p-10 py-20 mx-5  ">
+        <div className="p-5 lg:p-5">
           <h1 className="text-3xl font-bold uppercase text-center pb-10">
             Realstate &nbsp;
             <span className="offset-1 text-indigo-400"> Agents </span>
           </h1>
-
-          <div className="hidden lg:flex">
-            <Team />
-          </div>
-          <div className="hidden sm:flex lg:hidden">
-            <Team1 />
-          </div>
-          <div className="flex sm:hidden lg:hidden">
-            <Team2 />
-          </div>
+         <Team/>
         </div>
         <div className="bg-lime-200  mb-0">
           <Contact />
