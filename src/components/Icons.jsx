@@ -117,10 +117,10 @@ export const FaceBook = ({ className, ...rest }) => (
 
 export const Ham = () => {
   return (
-    <div class="space-y-2">
-      <div class="w-8 h-1 bg-gray-600 rounded-sm "></div>
-      <div class="w-8 h-1 bg-gray-600 rounded-sm"></div>
-      <div class="w-8 h-1 bg-gray-600 rounded-sm "></div>
+    <div className="space-y-2">
+      <div className="w-8 h-1 bg-gray-600 rounded-sm "></div>
+      <div className="w-8 h-1 bg-gray-600 rounded-sm"></div>
+      <div className="w-8 h-1 bg-gray-600 rounded-sm "></div>
     </div>
   );
 };

@@ -5,7 +5,7 @@ const Adata = {
       img: "/images/agentimg/apic1.png",
       name: "Shashank Goyal",
       post: "Property Manager",
-      desc: " Our experienced real estate agent with over 10 years of experience in the industry. He is dedicated to providing exceptional service and helping clients.",
+      desc: " Our experienced real estate agent with over 10 years of experience in the industry. He is dedicated to providing exceptional service.",
     },
     {
       id: 2,
@@ -59,4 +59,5 @@ const Adata = {
   ],
 };
 
+//console.log(filteredData);
 export default Adata;

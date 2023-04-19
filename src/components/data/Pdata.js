@@ -4,8 +4,15 @@ const Pdata = {
       id: 1,
       img: "/images/fimg/pic1.png",
       imgtitle: "Design Illusions",
-      title: "Fully furnished House",
+      title: "Fully Furnished House",
       desc: "Spacious one-storey house with modern design, fully furnished, equipped kitchen, comfortable bedrooms, and backyard. ",
+      images: [
+        "/images/fimg/pic1.png",
+        "/images/fimg/FullyFHouse/pic1.png",
+        "/images/fimg/FullyFHouse/pic2.png",
+        "/images/fimg/FullyFHouse/pic3.png",
+        "/images/fimg/FullyFHouse/pic4.png",
+      ],
     },
     {
       id: 2,
@@ -13,6 +20,13 @@ const Pdata = {
       imgtitle: "Virtual Worlds",
       title: "Modern Living Room",
       desc: "Experience Practical and Spacious Living with Modern Design in Our Rental Property, Ideal for a Contemporary Lifestyle",
+      images: [
+        "/images/fimg/pic2.png",
+        "/images/fimg/ModernLiving/pic1.png",
+        "/images/fimg/ModernLiving/pic2.png",
+        "/images/fimg/ModernLiving/pic3.png",
+        "/images/fimg/ModernLiving/pic4.png",
+      ],
     },
     {
       id: 3,
@@ -20,6 +34,13 @@ const Pdata = {
       imgtitle: "Arts",
       title: "Lavish Cottage ",
       desc: "Experience opulent living in our stunning cottage for sale, featuring a spacious living room, fully equipped kitchen. ",
+      images: [
+        "/images/fimg/pic3.png",
+        "/images/fimg/LavishCottage/pic1.png",
+        "/images/fimg/LavishCottage/pic2.png",
+        "/images/fimg/LavishCottage/pic3.png",
+        "/images/fimg/LavishCottage/pic4.png",
+      ],
     },
     {
       id: 4,
@@ -27,6 +48,13 @@ const Pdata = {
       imgtitle: "Collictibes",
       title: "Village Living",
       desc: "Experience the charm of village living with our idyllic escape, featuring peaceful surroundings and cozy accommodations.",
+      images: [
+        "/images/fimg/pic3.png",
+        "/images/fimg/VillageLiving/pic1.png",
+        "/images/fimg/VillageLiving/pic2.png",
+        "/images/fimg/VillageLiving/pic3.png",
+        "/images/fimg/VillageLiving/pic4.png",
+      ],
     },
     {
       id: 5,
@@ -34,6 +62,13 @@ const Pdata = {
       imgtitle: "Robotics Arts",
       title: "House on Rent ",
       desc: "Features two bedrooms, fully equipped kitchen and bathroom, spacious backyard, and family-friendly location near amenities.",
+      images: [
+        "/images/fimg/pic5.png",
+        "/images/fimg/HouseRent/pic1.png",
+        "/images/fimg/HouseRent/pic2.png",
+        "/images/fimg/HouseRent/pic3.png",
+        "/images/fimg/HouseRent/pic4.png",
+      ],
     },
     {
       id: 6,
@@ -41,6 +76,13 @@ const Pdata = {
       imgtitle: "Photography",
       title: "House at Bashundhara",
       desc: "Discover modern living in a prime location with our Bashundhara house for rent, featuring spacious rooms and modern amenities. ",
+      images: [
+        "/images/fimg/pic6.png",
+        "/images/fimg/HouseBasundhara/pic1.png",
+        "/images/fimg/HouseBasundhara/pic2.png",
+        "/images/fimg/HouseBasundhara/pic3.png",
+        "/images/fimg/HouseBasundhara/pic4.png",
+      ],
     },
     {
       id: 7,
@@ -48,6 +90,13 @@ const Pdata = {
       imgtitle: "Photography",
       title: "Luxurious house ",
       desc: "Indulge in luxurious living with our stunning house for sale, featuring elegant design, spacious rooms and state-of-the-art amenities.",
+      images: [
+        "/images/tred/tredpic6.png",
+        "/images/fimg/Luxiurious/pic1.png",
+        "/images/fimg/Luxiurious/pic2.png",
+        "/images/fimg/Luxiurious/pic3.png",
+        "/images/fimg/Luxiurious/pic4.png",
+      ],
     },
     {
       id: 8,
@@ -55,6 +104,13 @@ const Pdata = {
       imgtitle: "Photography",
       title: "Elite House",
       desc: "Experience the epitome of elite living with our exclusive house for rent, featuring top-of-the-line amenities and impeccable design.",
+      images: [
+        "/images/tred/tredpic7.png",
+        "/images/fimg/Elite/pic1.png",
+        "/images/fimg/Elite/pic2.png",
+        "/images/fimg/Elite/pic3.png",
+        "/images/fimg/Elite/pic4.png",
+      ],
     },
   ],
 };
