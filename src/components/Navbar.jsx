@@ -71,7 +71,7 @@ const Nav1 = () => {
               name="contact"
               className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              <Link href="/contact">Contact US</Link>
+              <Link href="/contactpage">Contact US</Link>
             </li>
           </ul>
         </div>
@@ -140,7 +140,7 @@ const Nav1 = () => {
               <Link href="/blog">Blog</Link>
             </li>
             <li className="border-b border-gray-400 my-8 uppercase hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in">
-              <Link href="/contact">Contact</Link>
+              <Link href="/contactpage">Contact</Link>
             </li>
           </ul>
         </div>
@@ -180,9 +180,9 @@ const Nav1 = () => {
               <Link href="/blog">Blog</Link>
             </li>
             <li className="border-b border-gray-400 my-8 uppercase hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in">
-              <Link href="/contact">Contact</Link>
+              <Link href="/contactpage">Contact</Link>
             </li>
-            <li className="flex flex-wrap gap-5 border-b border-gray-400 my-8 uppercase hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in">
+            <ul className="flex flex-wrap gap-5 border-b border-gray-400 my-8 uppercase hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in">
               <li className="flex-1 border-b border-gray-400 uppercase hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in">
                 <Link href="/Login">Login</Link>
               </li>
@@ -190,7 +190,7 @@ const Nav1 = () => {
               <li className="border-b border-gray-400 uppercase hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in">
                 <Link href="/Signup">Signup</Link>
               </li>
-            </li>
+            </ul>
             <li className="my-8">
               <div className="flex flex-wrap">
                 <input
