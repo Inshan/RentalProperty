@@ -19,7 +19,7 @@ const Adata = {
       img: "/images/agentimg/apic3.png",
       name: "Sujal Pradhan",
       post: "Property Assistant",
-      desc: "Our energetic and enthusiastic real estate agent who is committed to delivering exceptional customer service and customer care .",
+      desc: "Our energetic and enthusiastic real estate agent who is committed to delivering exceptional customer service and care.",
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ const Adata = {
       img: "/images/agentimg/apic6.png",
       name: "Aasma Adhikari",
       post: "Lease Administrator",
-      desc: "Our tech-savvy real estate agent who leverages the latest technology to help clients find their dream homes faster and more efficiently.",
+      desc: "Our tech-savvy real estate agent who leverages the latest technology to help clients find their dream homes faster.",
     },
     {
       id: 7,
@@ -54,7 +54,7 @@ const Adata = {
       img: "/images/agentimg/apic8.png",
       name: "Sujal Pradhan",
       post: "Property Assistant",
-      desc: "Our energetic and enthusiastic real estate agent who is committed to delivering exceptional customer service and customer care .",
+      desc: "Our energetic and enthusiastic real estate agent who is committed to delivering exceptional customer service and care.",
     },
   ],
 };

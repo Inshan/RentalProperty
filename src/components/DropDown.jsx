@@ -6,7 +6,7 @@ function Category({ children }) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
-  const toggleDropdown = () => {
+  const toggleDropdown = () => {<s></s>
     setIsOpen(!isOpen);
   };
 
