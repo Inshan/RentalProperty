@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
+import Selector from "./DropSelect";
 import Mainimg from "../../public/images/mainimg.png";
+import SearchBar from "./SearchBar";
+//import SearchBar from "./SearchBar";
 //import Subimg from "../../public/images/subimg.png";
 
 const Hero = () => {
@@ -21,30 +24,34 @@ const Hero = () => {
   return (
     <>
       {/* component */}
-      <div className="h-screen-min bg-gray-50 flex items-center">
-        <section
-          className="bg-cover bg-center py-32 w-full"
+      <div className="h-screen-max  bg-gray-50 flex items-center">
+        <div
+          className="bg-cover bg-center py-16 pt-20 w-full h-full "
           style={{
             backgroundImage: `url(${Mainimg.src})`,
           }}
         >
           <div className="container mx-auto text-left text-white">
             <div className="flex items-center">
-              <div className="w-2/3">
-                <h1 className={`text-5xl font-medium mb-6 ml-8 ${bounce}`}>
+              <div className="lg:w-1/2 w-full">
+                <h1
+                  className={`lg:text-5xl sm:text-3xl sm:mx-auto font-medium text-3xl mb-6 lg:ml-8 ${bounce}`}
+                >
                   Explore our properties and find yours
                 </h1>
-                <p className="text-xl mb-12 ml-6">
+                <p className="text-xl sm:text-xl sm:w-full  mb-12 lg:ml-8 ">
                   Search your dream home in Nepal’s Largest Property Market .
                   you can easily search, compare, and find your perfect property
                   in just a few clicks.
                 </p>
-                <a
-                  href="#"
-                  className="bg-indigo-500 text-white py-4 px-10 rounded-full hover:bg-indigo-600 text-2xl "
-                >
-                  Explore
-                </a>
+                <div className="lg:m-8">
+                  <a
+                    href="#"
+                    className="bg-orange-500 text-white py-3 px-8 rounded-full hover:bg-orange-600 text-2xl  "
+                  >
+                    Explore
+                  </a>
+                </div>
               </div>
               <div className="w-1/2 pl-16 hidden sm:flex ">
                 <img
@@ -55,7 +62,21 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </section>
+          <div className="flex justify-center mt-20 gap-16 flex-wrap ">
+            <div>
+              <Selector />
+            </div>
+            <div>
+              <Selector />
+            </div>
+            <div>
+              <Selector />
+            </div>
+            <div>
+              <SearchBar />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

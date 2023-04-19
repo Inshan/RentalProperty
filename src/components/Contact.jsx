@@ -4,18 +4,18 @@ const Contact = () => {
   return (
     <div>
       {/* component */}
-      <div className=" flex items-top justify-center min-h-screen bg-lime-50 dark:bg-gray-900 sm:items-center sm:pt-0">
+      <div className=" flex items-top justify-center min-h-screen bg-lime-50 sm:items-center sm:pt-0">
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
           <div className="mt-4 overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
-              <div className="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
-                <h1 className="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight">
-                  Get in touch
+              <div className="p-6 mr-2 bg-gray-100  sm:rounded-lg">
+                <h1 className="text-4xl sm:text-5xl text-gray-800  font-extrabold tracking-tight">
+                  Connect With Agent
                 </h1>
-                <p className="text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2">
+                <p className="text-normal text-lg sm:text-2xl font-medium text-gray-600  mt-2">
                   Fill in the form to start a conversation
                 </p>
-                <div className="flex items-center mt-8 text-gray-600 dark:text-gray-400">
+                <div className="flex items-center mt-8 text-gray-600 ">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -42,7 +42,7 @@ const Contact = () => {
                     Bouddha, pipalbot, kathmandu, 44600
                   </div>
                 </div>
-                <div className="flex items-center mt-4 text-gray-600 dark:text-gray-400">
+                <div className="flex items-center mt-4 text-gray-600">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -63,7 +63,7 @@ const Contact = () => {
                     9800000000
                   </div>
                 </div>
-                <div className="flex items-center mt-2 text-gray-600 dark:text-gray-400">
+                <div className="flex items-center mt-2 text-gray-600 d">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -95,7 +95,7 @@ const Contact = () => {
                     name="name"
                     id="name"
                     placeholder="Full Name"
-                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border-gray-400 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                   />
                 </div>
                 <div className="flex flex-col mt-2">
@@ -107,7 +107,7 @@ const Contact = () => {
                     name="email"
                     id="email"
                     placeholder="Email"
-                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                   />
                 </div>
                 <div className="flex flex-col mt-2">
@@ -119,7 +119,7 @@ const Contact = () => {
                     name="tel"
                     id="tel"
                     placeholder="Telephone Number"
-                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                   />
                 </div>
                 <button
