@@ -1,5 +1,6 @@
 import React from "react";
 import Tdata from "./data/Tdata";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 
@@ -25,19 +26,21 @@ const RentOrBuy = () => {
         <div className="flex flex-wrap gap-10  ">
           {Tdata.cardData.map((value, index) => (
             <SwiperSlide key={index}>
-              <div
-                className=" w-full  overflow-hidden bg-no-repeat bg-cover mb-4 rounded-lg  "
-                style={{ backgroundImage: `url(${value.img})` }}
-              >
+              <Link href="/property">
                 <div
-                  className="h-48 mx-auto rounded-lg "
-                  style={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}
+                  className=" w-full  overflow-hidden bg-no-repeat bg-cover mb-4 rounded-lg  "
+                  style={{ backgroundImage: `url(${value.img})` }}
                 >
-                  <h1 className="text-xl font-bold text-white  text-center pt-20  ">
-                    {value.category}
-                  </h1>
+                  <div
+                    className="h-48 mx-auto rounded-lg "
+                    style={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}
+                  >
+                    <h1 className="text-xl font-bold text-white  text-center pt-20  ">
+                      {value.category}
+                    </h1>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </div>
@@ -104,19 +107,21 @@ export const RentOrBuy2 = () => {
         <div className="flex flex-wrap gap-10  ">
           {Tdata.cardData.map((value, index) => (
             <SwiperSlide key={index}>
-              <div
-                className=" w-full  overflow-hidden bg-no-repeat bg-cover mb-4 rounded-lg  "
-                style={{ backgroundImage: `url(${value.img})` }}
-              >
+              <Link href={"/property"}>
                 <div
-                  className="h-48 mx-auto rounded-lg "
-                  style={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}
+                  className=" w-full  overflow-hidden bg-no-repeat bg-cover mb-4 rounded-lg  "
+                  style={{ backgroundImage: `url(${value.img})` }}
                 >
-                  <h1 className="text-xl font-bold text-white  text-center pt-20  ">
-                    {value.category}
-                  </h1>
+                  <div
+                    className="h-48 mx-auto rounded-lg "
+                    style={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}
+                  >
+                    <h1 className="text-xl font-bold text-white  text-center pt-20  ">
+                      {value.category}
+                    </h1>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </div>
@@ -143,19 +148,21 @@ export const RentOrBuy3 = () => {
         <div className="flex flex-wrap gap-10  ">
           {Tdata.cardData.map((value, index) => (
             <SwiperSlide key={index}>
-              <div
-                className=" w-full  overflow-hidden bg-no-repeat bg-cover mb-4 rounded-lg  "
-                style={{ backgroundImage: `url(${value.img})` }}
-              >
+              <Link href="/property">
                 <div
-                  className="h-48 mx-auto rounded-lg "
-                  style={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}
+                  className=" w-full  overflow-hidden bg-no-repeat bg-cover mb-4 rounded-lg  "
+                  style={{ backgroundImage: `url(${value.img})` }}
                 >
-                  <h1 className="text-xl font-bold text-white  text-center pt-20  ">
-                    {value.category}
-                  </h1>
+                  <div
+                    className="h-48 mx-auto rounded-lg "
+                    style={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}
+                  >
+                    <h1 className="text-xl font-bold text-white  text-center pt-20  ">
+                      {value.category}
+                    </h1>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </div>

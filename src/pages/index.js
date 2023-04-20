@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "./Layout";
 import Hero from "@/components/Hero";
-import Team from "@/components/Team";
-import Search from "@/components/Search";
+import Team, { Team1, Team2 } from "@/components/Team";
+//import SearchBar from "@/components/SearchBar";
 import Contact from "@/components/Contact";
 import Trendingprop, {
   Trendingprop1,
@@ -11,11 +11,8 @@ import Trendingprop, {
 import Searchimg from "../../public/images/searchimg.png";
 import Explore from "@/components/Explore";
 import Featured from "@/components/Featured";
-import Blog from "@/components/blog";
-import Services from "@/components/services";
 import Recomended from "@/components/Recomended";
-import Team_redo from "@/components/Team";
-import SearchBg from "../../public/images/sbg.png";
+//import SearchBg from "../../public/images/sbg.png";
 import RentOrBuy, {
   RentOrBuy1,
   RentOrBuy2,
@@ -29,15 +26,17 @@ const index = () => {
         <Hero />
 
         <div
-          className="w-full hidden sm:hidden lg:flex bg-no-repeat bg-cover min-h-screen py-0 my-0 "
+          className="w-full hidden text-center sm:hidden lg:flex bg-no-repeat bg-cover min-h-screen py-0 my-0 "
           style={{ backgroundImage: `url(${Searchimg.src})` }}
         >
-          <h1 className="py-48 text-5xl  font-bold text-center -translate-y-1/4 ml-96 ">
-            <span className="bg-gray-400 bg-opacity-10 leading-loose p-4 px-8 rounded-md animate-pulse ">
-              Your Ideal Property <br />
-              &nbsp; Awaits You
-            </span>
-          </h1>
+          <div className="flex justify-center w-full mr-52 pt-10">
+            <h1 className=" flex text-5xl  font-bold  ml-80 ">
+              <span className="bg-gray-400 text-center bg-opacity-10 leading-loose p-4 px-8 rounded-md animate-pulse ">
+                Your Ideal Property <br />
+                &nbsp; Awaits You
+              </span>
+            </h1>
+          </div>
         </div>
         <Explore />
         <div className=" pl-8  bg-green-50 mx-0  pb-16 ">
@@ -77,7 +76,7 @@ const index = () => {
             Trending Properties
           </h1>
 
-          <div className="flex flex-wrap items-center justify-evenly bg-slate-500 gap-8 px-4 py-0 md:px-10 lg:px-14">
+          <div className="flex flex-wrap items-center justify-evenly bg-slate-500  gap-8 px-4 py-0 md:px-10 lg:gap-14 lg:px-8">
             <Featured />
           </div>
         </div>
@@ -87,24 +86,32 @@ const index = () => {
             Desirable Properties
           </h1>
 
-          <div className="flex flex-wrap items-center justify-evenly bg-slate-500 gap-8 px-4 py-0 md:px-10 lg:px-14 pb-10">
+          <div className="flex flex-wrap items-center justify-evenly bg-slate-500 gap-8 px-4 py-0 md:px-10 lg:gap-14 lg:px-8 pb-10">
             <Recomended />
           </div>
         </div>
 
-        <div className="p-5 lg:p-5">
+        <div className="p-8 py-12 mx-5  ">
           <h1 className="text-3xl font-bold uppercase text-center pb-10">
             Realstate &nbsp;
-            <span className="offset-1 text-indigo-400"> Agents </span>
+            <span className="offset-1 text-indigo-400">Agents</span>
           </h1>
-          <Team />
+
+          <div className="hidden   lg:flex lg:gap-8 mx-6 drop-shadow-sm ">
+            <Team />
+          </div>
+          <div className="hidden md:block align-center lg:hidden">
+            <Team1 />
+          </div>
+          <div className=" lg:hidden">
+            <Team2 />
+          </div>
         </div>
+
         <div className="bg-lime-200  mb-0">
           <Contact />
         </div>
       </div>
-      {/* <Services/> */}
-      {/* <Blog /> */}
     </Layout>
   );
 };

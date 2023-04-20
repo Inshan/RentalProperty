@@ -33,7 +33,7 @@ const Adata = {
       img: "/images/agentimg/apic5.png",
       name: "Ashish Aryal",
       post: "Tenant Coordinator",
-      desc: "Our highly skilled and experienced real estate agent who has a knack for negotiating and getting the best deals for his clients. ",
+      desc: "Our highly skilled and experienced real estate agent who has a knack for negotiating and getting the best deals. ",
     },
     {
       id: 6,

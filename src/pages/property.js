@@ -2,15 +2,25 @@ import React from "react";
 import Layout from "./Layout";
 import Featured from "@/components/Featured";
 import PropertyBg from "../../public/images/property_bg.png";
-import Trendingprop from "@/components/Trendingprop";
-import Recomended from "@/components/Recomended";
+//import Featured from "@/components/Featured";
+//import Contact from "@/components/Contact";
+import Trendingprop, {
+  Trendingprop1,
+  Trendingprop2,
+} from "@/components/Trendingprop";
+// import RentOrBuy, {
+//   RentOrBuy1,
+//   RentOrBuy2,
+//   RentOrBuy3,
+// } from "@/components/RentOrBuy";
+//import Recomended from "@/components/Recomended";
 
 const property = () => {
   return (
     <Layout>
-      <div>
+      <div className="bg-teal-50 text-black drop-shadow-sm  ">
         {/* Section: Design Block */}
-        <section className=" text-gray-800 text-center lg:text-left background-radial-gradient">
+        <section className=" text-gray-800 text-center lg:text-left background-radial-gradient  ">
           <div
             className="relative overflow-hidden bg-no-repeat bg-cover"
             style={{
@@ -38,109 +48,16 @@ const property = () => {
             </div>
           </div>
         </section>
-        {/* Section: Design Block */}
-
-        {/* for large Screen */}
+        {/*filter block*/}
 
         <div>
-          <div className="hidden lg:flex h-screen  ">
-            <aside className="w-1/4 border-r border-solid border-gray-300 px-10  bg-gray-50 ">
-              <div className="flex gap-8 justify-center items-center py-8 px-10 ">
-                <div>
-                  <h1 className=" text-xl font-semibold">
-                    Filter By Category:
-                  </h1>
-                </div>
-                <div className="relative " data-te-dropdown-ref>
-                  <button
-                    className="flex items-center whitespace-nowrap rounded bg-blue-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] motion-reduce:transition-none"
-                    type="button"
-                    id="dropdownMenuButton1"
-                    data-te-dropdown-toggle-ref
-                    aria-expanded="false"
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                  >
-                    Category
-                    <span className="ml-2 w-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        className="h-5 w-5"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                  <ul
-                    className="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
-                    aria-labelledby="dropdownMenuButton1"
-                    data-te-dropdown-menu-ref
-                  >
-                    <li>
-                      <a
-                        className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#"
-                        data-te-dropdown-item-ref
-                      >
-                        BUY
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#"
-                        data-te-dropdown-item-ref
-                      >
-                        RENT
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                        href="#"
-                        data-te-dropdown-item-ref
-                      >
-                        SEE All
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </aside>
+          <div className="flex flex-wrap mx-48 py-20 justify-around  border-b-2 border-solid border-gray-400  ">
+            <div className="flex gap-4 items-center ">
+              <h1 className="text-xl font-semibold">Filter By Category :</h1>
 
-            <div className="w-3/4 bg-teal-50 ">
-              <div className="px-10 py-8 bg-gray-50 ">
-                <h1 className="text-3xl font-bold text-center drop-shadow-sm   ">
-                  All Properties
-                </h1>
-              </div>
-              <section className="flex flex-wrap gap-8 items-center justify-center overflow-auto h-full pb-0 ">
-                <div className="p-8 gap-8 flex flex-wrap items-center justify-center overflow-hidden ">
-                  <Featured className="overflow-hidden" />
-                </div>
-              </section>
-            </div>
-          </div>
-        </div>
-        {/* large screen ended */}
-
-        {/* for mobile Screen */}
-
-        <div className="gap-1 grid lg:hidden xl:hidden place-items-center  mx-auto ml py-8">
-          <section>
-            <div className="flex gap-8 flex-wrap justify-center items-center py-8 ">
-              <div>
-                <h1 className=" text-xl font-semibold">Filter By Category:</h1>
-              </div>
               <div className="relative " data-te-dropdown-ref>
                 <button
-                  className="flex items-center whitespace-nowrap rounded bg-blue-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] motion-reduce:transition-none"
+                  className="flex items-center whitespace-nowrap rounded bg-orange-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-orange-400 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-orange-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-orange-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] motion-reduce:transition-none"
                   type="button"
                   id="dropdownMenuButton1"
                   data-te-dropdown-toggle-ref
@@ -165,7 +82,155 @@ const property = () => {
                   </span>
                 </button>
                 <ul
-                  className="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                  className="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-white [&[data-te-dropdown-show]]:block"
+                  aria-labelledby="dropdownMenuButton1"
+                  data-te-dropdown-menu-ref
+                >
+                  <li>
+                    <a
+                      className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-black dark:hover:bg-white"
+                      href="#"
+                      data-te-dropdown-item-ref
+                    >
+                      BUY
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-black dark:hover:bg-white"
+                      href="#"
+                      data-te-dropdown-item-ref
+                    >
+                      RENT
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-black dark:hover:bg-white"
+                      href="#"
+                      data-te-dropdown-item-ref
+                    >
+                      SEE All
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="flex gap-4 items-center ">
+              <h1 className="font-bold text-xl "> Select Type : </h1>
+              <div className="relative " data-te-dropdown-ref>
+                <button
+                  className="flex items-center whitespace-nowrap rounded bg-orange-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-orange-400 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-orange-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-orange-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] motion-reduce:transition-none"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-te-dropdown-toggle-ref
+                  aria-expanded="false"
+                  data-te-ripple-init
+                  data-te-ripple-color="light"
+                >
+                  Type
+                  <span className="ml-2 w-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      className="h-5 w-5"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <ul
+                  className="absolute z-[1000] float-left m-0 hidden uppercase min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-white [&[data-te-dropdown-show]]:block"
+                  aria-labelledby="dropdownMenuButton1"
+                  data-te-dropdown-menu-ref
+                >
+                  <li>
+                    <a
+                      className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
+                      href="#"
+                      data-te-dropdown-item-ref
+                    >
+                      Flat
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
+                      href="#"
+                      data-te-dropdown-item-ref
+                    >
+                      House
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white"
+                      href="#"
+                      data-te-dropdown-item-ref
+                    >
+                      Apartment
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* for large Screen */}
+        <div className="bg-teal-50 pb-10 ">
+          <h1 className=" text-2xl lg:text-3xl  text-black font-bold uppercase text-center pb-8 pt-12">
+            All Properties
+          </h1>
+
+          <div className="flex flex-wrap items-center justify-evenly bg-teal-50 gap-8 px-4 py-0 md:px-10 lg:px-14">
+            <Featured />
+          </div>
+        </div>
+
+        {/* large screen ended */}
+
+        {/* for mobile Screen */}
+
+        <div className="gap-1 grid lg:hidden xl:hidden place-items-center  mx-auto ml py-8">
+          <section>
+            <div className="flex gap-8 flex-wrap justify-center items-center py-8 ">
+              <div>
+                <h1 className=" text-xl font-semibold">Filter By Category:</h1>
+              </div>
+              <div className="relative " data-te-dropdown-ref>
+                <button
+                  className="flex items-center whitespace-nowrap rounded bg-orange-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] motion-reduce:transition-none"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-te-dropdown-toggle-ref
+                  aria-expanded="false"
+                  data-te-ripple-init
+                  data-te-ripple-color="light"
+                >
+                  Category
+                  <span className="ml-2 w-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      className="h-5 w-5"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <ul
+                  className="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-white [&[data-te-dropdown-show]]:block"
                   aria-labelledby="dropdownMenuButton1"
                   data-te-dropdown-menu-ref
                 >
@@ -204,7 +269,7 @@ const property = () => {
           <div>
             <h1 className="text-xl font-bold text-center">All Properties</h1>
           </div>
-          <section className="flex flex-wrap gap-4 items-center justify-center ">
+          <section className=" hidden  lg:flex flex-wrap lg:gap-14 items-center justify-between lg:px-4    ">
             <Featured />
           </section>
         </div>
@@ -212,27 +277,39 @@ const property = () => {
 
       {/* for mobile screen ended */}
 
-      <section className="bg-teal-50 mt-32">
-        <div className="py-10">
-          <h1 className=" text-center  text-3xl font-bold  ">
-            Desirable Properties
-          </h1>
+      <div className=" pl-8  bg-green-50 mx-0  pb-16 ">
+        <h1 className=" text-2xl font-bold uppercase text-center py-8 pr-6 ">
+          Flat
+        </h1>
+        <div>
+          <div className="hidden lg:flex px-10 ">
+            <Trendingprop />
+          </div>
+          <div className="hidden sm:flex  lg:hidden ">
+            <Trendingprop1 />
+          </div>
+          <div className=" flex sm:hidden  lg:hidden w-full">
+            <Trendingprop2 />
+          </div>
         </div>
-        <div className="flex items-center justify-center gap-8  ">
-          <Recomended />
-        </div>
-      </section>
-      <section className="bg-teal-50">
-        <div className="pt-10">
-          <h1 className=" text-center  text-3xl font-bold  ">
-            Trending Properties In KTM
-          </h1>
-        </div>
+      </div>
 
-        <div className="flex items-center justify-center mx-14 py-10 ">
-          <Trendingprop />
+      <div className=" pl-8  bg-green-50 mx-0  pb-16 ">
+        <h1 className=" text-2xl font-bold uppercase text-center pb-8 pr-6 ">
+          House
+        </h1>
+        <div>
+          <div className="hidden lg:flex px-10 ">
+            <Trendingprop />
+          </div>
+          <div className="hidden sm:flex  lg:hidden ">
+            <Trendingprop1 />
+          </div>
+          <div className=" flex sm:hidden  lg:hidden w-full">
+            <Trendingprop2 />
+          </div>
         </div>
-      </section>
+      </div>
     </Layout>
   );
 };

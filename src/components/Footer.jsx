@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { TwitterIcon, LinkedinIcon, Pintrest, FaceBook } from "./Icons";
 
 const Footer = () => {
@@ -53,36 +54,36 @@ const Footer = () => {
                     </span>
                     <ul className="list-unstyled">
                       <li>
-                        <a
+                        <Link
                           className="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                          href="https://www.creative-tim.com/presentation?ref=njs-profile"
+                          href="/about"
                         >
                           About Us
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                          href="https://blog.creative-tim.com?ref=njs-profile"
+                          href="/blog"
                         >
                           Blog
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                          href="https://www.github.com/creativetimofficial?ref=njs-profile"
+                          href="/about"
                         >
                           Facebook
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                          href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile"
+                          href="#"
                         >
                           Free Products
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -92,36 +93,36 @@ const Footer = () => {
                     </span>
                     <ul className="list-unstyled">
                       <li>
-                        <a
+                        <Link
                           className="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                          href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
+                          href="/about"
                         >
                           MIT License
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                          href="https://creative-tim.com/terms?ref=njs-profile"
+                          href="/blog"
                         >
                           Terms &amp; Conditions
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                          href="https://creative-tim.com/privacy?ref=njs-profile"
+                          href="#"
                         >
                           Privacy Policy
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                          href="https://creative-tim.com/contact-us?ref=njs-profile"
+                          href="/contact"
                         >
                           Contact Us
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -133,20 +134,17 @@ const Footer = () => {
               <div className="w-full md:w-4/12 px-4 mx-auto text-center">
                 <div className="text-sm text-white font-semibold py-1">
                   Copyright © <span id="get-current-year">2021</span>
-                  <a
-                    href="https://www.creative-tim.com/product/notus-js"
+                  <Link
+                    href="#"
                     className="text-white hover:text-gray-800"
                     target="_blank"
                   >
                     {" "}
                     Meerako Services
-                  </a>
-                  <a
-                    href="https://www.creative-tim.com?ref=njs-profile"
-                    className="text-white hover:text-blueGray-800"
-                  >
+                  </Link>
+                  <Link href="#" className="text-white hover:text-blueGray-800">
                     Meerako Team
-                  </a>
+                  </Link>
                   .
                 </div>
               </div>

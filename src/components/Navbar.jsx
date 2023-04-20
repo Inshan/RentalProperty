@@ -33,8 +33,9 @@ const Nav1 = () => {
               className="hover:text-blue-600  antialiased text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
               <Link href={"/"}>
-                <div className="flex gap-1">
-                  home <BsHouseCheck className="text-xl" />
+                <div className="flex gap-1 items-center ">
+                  <BsHouseCheck className="text-xl" />
+                  <span className="pt-1"> Home</span>
                 </div>
               </Link>
             </li>
@@ -42,22 +43,32 @@ const Nav1 = () => {
               name="about"
               className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              <Link href="/aboutus">About Us</Link>
+              <Link href="/aboutus">
+                <div className="flex gap-1 items-center">
+                  <BsInfoCircle className="text-xl" />{" "}
+                  <span className="pt-1"> about </span>
+                </div>
+              </Link>
             </li>
             <li
               name="services"
               className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              <Link href="/services">Services</Link>
+              <Link href="/services">
+                <div className="flex gap-1">
+                  <BsHouseGear className="text-2xl items-center py-0.5 " />
+                  <span className="pt-1"> services </span>
+                </div>
+              </Link>
             </li>
             <li
               name="services"
               className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in  font-semibold "
             >
               <Link href={"/property"}>
-                {" "}
-                <div className="flex gap-1">
-                  property <BsBuildings className="text-xl" />
+                <div className="flex gap-1 items-center justify-end  ">
+                  <BsBuildings className=" text-xl " />
+                  <span className="text-sm pt-1">property</span>
                 </div>
               </Link>
             </li>
@@ -65,13 +76,23 @@ const Nav1 = () => {
               name="property"
               className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              <Link href="/blog">Blog</Link>
+              <Link href="/blog">
+                <div className="flex gap-1 items-center ">
+                  <AiOutlineEdit className="text-xl" />{" "}
+                  <span className="pt-1"> blog </span>
+                </div>
+              </Link>
             </li>
             <li
               name="contact"
               className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
             >
-              <Link href="/contactpage">Contact US</Link>
+              <Link href="/contactpage">
+                <div className="flex gap-1 items-base ">
+                  <BsPerson className="text-2xl py-0.5 " />{" "}
+                  <span className="pt-1"> contact </span>
+                </div>
+              </Link>
             </li>
           </ul>
         </div>
@@ -97,12 +118,7 @@ const Nav1 = () => {
         </div>
 
         <div onClick={() => setNav((prev) => !prev)} className="cursor-pointer">
-          <div
-            onClick={() => setNav((prev) => !prev)}
-            className="cursor-pointer"
-          >
-            <Ham />
-          </div>
+          <Ham className="text-white" />
         </div>
 
         <div className={nav ? "showMenuNav" : "hideMenuNav"}>
@@ -141,6 +157,10 @@ const Nav1 = () => {
             </li>
             <li className="border-b border-gray-400 my-8 uppercase hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in">
               <Link href="/contactpage">Contact</Link>
+            </li>
+            <li className="flex gap-4">
+              <button>Login</button>
+              <button>SignUp</button>
             </li>
           </ul>
         </div>
