@@ -76,7 +76,7 @@ const index = () => {
             Trending Properties
           </h1>
 
-          <div className="flex flex-wrap items-center justify-evenly bg-slate-500  gap-8 px-4 py-0 md:px-10 lg:gap-14 lg:px-8">
+          <div className="flex flex-wrap items-center justify-evenly bg-slate-500  gap-8 px-4 py-0 md:px-10 lg:gap-14 lg:px-16">
             <Featured />
           </div>
         </div>
@@ -86,7 +86,7 @@ const index = () => {
             Desirable Properties
           </h1>
 
-          <div className="flex flex-wrap items-center justify-evenly bg-slate-500 gap-8 px-4 py-0 md:px-10 lg:gap-14 lg:px-8 pb-10">
+          <div className="flex flex-wrap items-center justify-evenly bg-slate-500 gap-4 px-4 py-0 md:px-10 lg:gap-14 lg:px-16 pb-10">
             <Recomended />
           </div>
         </div>

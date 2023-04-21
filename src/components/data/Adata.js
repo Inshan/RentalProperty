@@ -5,14 +5,14 @@ const Adata = {
       img: "/images/agentimg/apic1.png",
       name: "Shashank Goyal",
       post: "Property Manager",
-      desc: " Our experienced real estate agent with over 10 years of experience in the industry. He is dedicated to providing exceptional service.",
+      desc: " Our experienced real estate agent with over 10 years of experience in the industry. ",
     },
     {
       id: 2,
       img: "/images/agentimg/apic2.png",
       name: "Sarah Sheikh",
       post: "Real Estate Agent",
-      desc: "One of our passionate and knowledgeable real estate agents who specializes in luxury properties With a keen eye for detail.",
+      desc: "One of our passionate and knowledgeable real estate agents who specializes in luxury properties.",
     },
     {
       id: 3,

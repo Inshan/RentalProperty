@@ -4,7 +4,7 @@ const Pdata = {
       id: 1,
       img: "/images/fimg/pic1.png",
       imgtitle: "Design Illusions",
-      title: "Fully Furnished House",
+      title: "Furnished House",
       desc: "Spacious one-storey house with modern design, fully furnished, equipped kitchen, comfortable bedrooms, and backyard. ",
       images: [
         "/images/fimg/pic1.png",
@@ -18,7 +18,7 @@ const Pdata = {
       id: 2,
       img: "/images/fimg/pic2.png",
       imgtitle: "Virtual Worlds",
-      title: "Modern Living Room",
+      title: "Living Room",
       desc: "Experience Practical and Spacious Living with Modern Design in Our Rental Property, Ideal for a Contemporary Lifestyle",
       images: [
         "/images/fimg/pic2.png",
@@ -74,7 +74,7 @@ const Pdata = {
       id: 6,
       img: "/images/fimg/pic6.png",
       imgtitle: "Photography",
-      title: "House at Bashundhara",
+      title: "House",
       desc: "Discover modern living in a prime location with our Bashundhara house for rent, featuring spacious rooms and modern amenities. ",
       images: [
         "/images/fimg/pic6.png",

@@ -6,7 +6,7 @@ import Link from "next/link";
 import {
   BsHouseCheck,
   BsInfoCircle,
-  BsHouseGear,
+  BsPeople,
   BsBuildings,
   BsPerson,
 } from "react-icons/bs";
@@ -30,7 +30,7 @@ const Nav1 = () => {
           <ul className="flex items-center justify-center gap-8 uppercase">
             <li
               name="home"
-              className="hover:text-blue-600  antialiased text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
+              className="hover:text-blue-600  antialiased text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in  "
             >
               <Link href={"/"}>
                 <div className="flex gap-1 items-center ">
@@ -41,10 +41,10 @@ const Nav1 = () => {
             </li>
             <li
               name="about"
-              className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
+              className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in  "
             >
               <Link href="/aboutus">
-                <div className="flex gap-1 items-center">
+                <div className="flex gap-1 items-center py-0.5 ">
                   <BsInfoCircle className="text-xl" />{" "}
                   <span className="pt-1"> about </span>
                 </div>
@@ -52,44 +52,44 @@ const Nav1 = () => {
             </li>
             <li
               name="services"
-              className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
+              className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in "
             >
               <Link href="/services">
                 <div className="flex gap-1">
-                  <BsHouseGear className="text-2xl items-center py-0.5 " />
+                  <BsPeople className="text-2xl items-center py-0.5 " />
                   <span className="pt-1"> services </span>
                 </div>
               </Link>
             </li>
             <li
               name="services"
-              className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in  font-semibold "
+              className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in  "
             >
               <Link href={"/property"}>
                 <div className="flex gap-1 items-center justify-end  ">
-                  <BsBuildings className=" text-xl " />
+                  <BsBuildings className=" text-xl pt-0.5 " />
                   <span className="text-sm pt-1">property</span>
                 </div>
               </Link>
             </li>
             <li
               name="property"
-              className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
+              className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in  "
             >
               <Link href="/blog">
                 <div className="flex gap-1 items-center ">
-                  <AiOutlineEdit className="text-xl" />{" "}
+                  <AiOutlineEdit className="text-xl" />
                   <span className="pt-1"> blog </span>
                 </div>
               </Link>
             </li>
             <li
               name="contact"
-              className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in font-semibold "
+              className="hover:text-blue-600 text-sm hover:cursor-pointer transition-all duration-300 hover:ease-in  "
             >
               <Link href="/contactpage">
                 <div className="flex gap-1 items-base ">
-                  <BsPerson className="text-2xl py-0.5 " />{" "}
+                  <BsPerson className="text-2xl py-0.5 " />
                   <span className="pt-1"> contact </span>
                 </div>
               </Link>
@@ -232,9 +232,9 @@ const Nav1 = () => {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                     ></path>
                   </svg>
