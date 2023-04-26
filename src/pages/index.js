@@ -12,12 +12,14 @@ import Searchimg from "../../public/images/searchimg.png";
 import Explore from "@/components/Explore";
 import Featured from "@/components/Featured";
 import Recomended from "@/components/Recomended";
+import { useState } from "react";
 //import SearchBg from "../../public/images/sbg.png";
 import RentOrBuy, {
   RentOrBuy1,
   RentOrBuy2,
   RentOrBuy3,
 } from "@/components/RentOrBuy";
+import Modal from "@/components/modal/Modal";
 
 const index = () => {
   return (
@@ -57,7 +59,7 @@ const index = () => {
         </div>
 
         <div>
-          <div className=" hidden lg:flex bg-green-50 px-20  ">
+          <div className=" hidden lg:flex bg-green-50 px-20 pb-10  ">
             <RentOrBuy />
           </div>
           <div className="hidden md:flex  lg:hidden sm:hidden bg-green-50 px-10 ">
@@ -71,6 +73,7 @@ const index = () => {
           </div>
         </div>
 
+        {/* <Modal /> */}
         <div className="bg-slate-500 ">
           <h1 className=" text-2xl lg:text-3xl  text-white font-bold uppercase text-center pb-8 pt-12">
             Trending Properties

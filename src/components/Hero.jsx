@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Selector from "./DropSelect";
+//import Selector from "./DropSelect";
 import Mainimg from "../../public/images/mainimg.png";
-import SearchBar from "./SearchBar";
+//import SearchBar from "./SearchBar";
+import Droption from "./search/Droption";
 //import SearchBar from "./SearchBar";
 //import Subimg from "../../public/images/subimg.png";
 
@@ -44,14 +45,14 @@ const Hero = () => {
                   you can easily search, compare, and find your perfect property
                   in just a few clicks.
                 </p>
-                <div className="lg:m-2">
+                {/* <div className="lg:m-2">
                   <a
                     href="#"
                     className="bg-orange-500 text-white py-3 px-8 rounded-full hover:bg-orange-600 text-2xl  "
                   >
                     Explore
                   </a>
-                </div>
+                </div> */}
               </div>
               <div className="w-1/2 pl-16 hidden sm:flex ">
                 <img
@@ -62,7 +63,10 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center mt-20 gap-16 flex-wrap ">
+          <div className="hidden lg:block">
+            <Droption />
+          </div>
+          {/* <div className="flex justify-center mt-20 gap-16 flex-wrap ">
             <div>
               <Selector />
             </div>
@@ -75,7 +79,7 @@ const Hero = () => {
             <div>
               <SearchBar />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
