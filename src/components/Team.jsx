@@ -1,6 +1,7 @@
 import Adata from "./data/Adata";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
+import Image from "next/image";
 
 // Import Swiper styles
 import "swiper/css";
@@ -29,7 +30,7 @@ const Team = () => {
             <SwiperSlide key={index}>
               <div className="w-full max-w-sm bg-white border rounded-sm ">
                 <div className="flex flex-col items-center py-10 ">
-                  <img
+                  <Image
                     className="w-24 h-24 mb-3 rounded-full shadow-lg"
                     src={value.img}
                     alt="Bonnie image"
@@ -72,7 +73,7 @@ export const Team1 = () => {
             <SwiperSlide key={index}>
               <div className="w-full max-w-sm bg-white border rounded-sm ">
                 <div className="flex flex-col items-center py-10 ">
-                  <img
+                  <Image
                     className="w-24 h-24 mb-3 rounded-full shadow-lg "
                     src={value.img}
                     alt="Bonnie image"
@@ -115,7 +116,7 @@ export const Team2 = () => {
             <SwiperSlide key={index}>
               <div className=" w-full min-w-full bg-white border rounded-sm ">
                 <div className="grid  place-items-center py-10 ">
-                  <img
+                  <Image
                     className="w-24 h-24 mb-3 rounded-full shadow-lg  "
                     src={value.img}
                     alt="Bonnie image"

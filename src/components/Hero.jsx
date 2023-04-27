@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 //import Selector from "./DropSelect";
 import Mainimg from "../../public/images/mainimg.png";
+
+import SubImg from "../../public/images/subimg.png";
+//import Fimg from "";
+
 //import SearchBar from "./SearchBar";
 import Droption from "./search/Droption";
-//import SearchBar from "./SearchBar";
-//import Subimg from "../../public/images/subimg.png";
+import Image from "next/image";
 
 const Hero = () => {
   // console.log(Mainimg);
@@ -46,19 +49,19 @@ const Hero = () => {
                   in just a few clicks.
                 </p>
                 {/* <div className="lg:m-2">
-                  <a
+                  <Link
                     href="#"
                     className="bg-orange-500 text-white py-3 px-8 rounded-full hover:bg-orange-600 text-2xl  "
                   >
                     Explore
-                  </a>
+                  </Link>
                 </div> */}
               </div>
               <div className="w-1/2 pl-16 hidden sm:flex ">
-                <img
-                  src="../../images/subimg.png"
+                <Image
+                  src={SubImg}
                   className="h-64 w-full object-cover rounded-xl"
-                  alt="Layout Image"
+                  alt="LayoutImage"
                 />
               </div>
             </div>

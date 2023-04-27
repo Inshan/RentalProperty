@@ -58,11 +58,21 @@ const SignUpForm = () => {
         </div>
       </div>
 
-      <button className="text-blue-700 ml-4 py-4 text-sm ">
+      <button
+        id="forget-pass"
+        aria-label="forget-password"
+        className="text-blue-700 ml-4 py-4 text-sm "
+      >
         forgetpassword?
       </button>
       <div className="bg-blue-600 min-w-min  rounded-lg text-sm text-center  ">
-        <button className="text-white  h-10  ">submit</button>
+        <button
+          id="submit-btn"
+          aria-label="Sub-Btn"
+          className="text-white  h-10  "
+        >
+          submit
+        </button>
       </div>
     </form>
   );

@@ -49,11 +49,21 @@ const LogInForm = () => {
         </div>
       </div>
 
-      <button className="text-blue-700 ml-4 py-4 text-sm ">
+      <button
+        id="form_btn"
+        aria-label="form-Btn"
+        className="text-blue-700 ml-4 py-4 text-sm "
+      >
         forgetpassword?
       </button>
       <div className="bg-blue-600 min-w-min  rounded-lg text-sm text-center  ">
-        <button className="text-white  h-10  ">submit</button>
+        <button
+          id="form-btn"
+          aria-label="submit-btn"
+          className="text-white  h-10  "
+        >
+          submit
+        </button>
       </div>
     </form>
   );

@@ -15,6 +15,8 @@ const SearchBar = () => {
             id="button-addon1"
             data-te-ripple-init
             data-te-ripple-color="light"
+            aria-label="navbtn"
+            name="navbtn1"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

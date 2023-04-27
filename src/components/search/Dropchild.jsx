@@ -46,6 +46,8 @@ const Dropchild = ({ name, options }) => {
   return (
     <div className="relative flex flex-col items-center w-[200px] h-10 rounded-lg py-2 px-4  ">
       <button
+        id="drop"
+        aria-label="drop-btn"
         onClick={() => setIsOpen((prev) => !prev)}
         className="bg-blue-400 w-full flex items-center justify-between font-bold text-lg rounded-lg tracking-wider border-4 border-transparent active:border-white duration-300 active:text-white px-4 py-1"
       >

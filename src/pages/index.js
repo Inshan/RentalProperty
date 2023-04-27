@@ -58,7 +58,7 @@ const index = () => {
           </div>
         </div>
 
-        <div>
+        {/* <div>
           <div className=" hidden lg:flex bg-green-50 px-20 pb-10  ">
             <RentOrBuy />
           </div>
@@ -71,9 +71,9 @@ const index = () => {
           <div className=" flex lg:hidden md:hidden sm:hidden bg-green-50 px-6 ">
             <RentOrBuy3 />
           </div>
-        </div>
+        </div> */}
 
-        {/* <Modal /> */}
+        <Modal />
         <div className="bg-slate-500 ">
           <h1 className=" text-2xl lg:text-3xl  text-white font-bold uppercase text-center pb-8 pt-12">
             Trending Properties
@@ -97,7 +97,7 @@ const index = () => {
         <div className="p-8 py-12 mx-5  ">
           <h1 className="text-3xl font-bold uppercase text-center pb-10">
             Realstate &nbsp;
-            <span className="offset-1 text-indigo-400">Agents</span>
+            <span className="offset-1 text-orange-400">Agents</span>
           </h1>
 
           <div className="hidden   lg:flex lg:gap-8 mx-6 drop-shadow-sm ">

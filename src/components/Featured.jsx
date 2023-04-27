@@ -1,6 +1,8 @@
 import React from "react";
 import Pdata from "./data/Pdata";
+import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const Featured = () => {
   const router = useRouter();
@@ -20,19 +22,19 @@ const Featured = () => {
             handleClick(index);
           }}
         >
-          <a>
-            <img className="rounded-t-lg  " src={value.img} alt="img" />
-          </a>
+          <Link href={"#"}>
+            <Image className="rounded-t-lg  " src={value.img} alt="allimg" />
+          </Link>
           <div className="p-5">
-            <a href="#">
+            <Link href="#">
               <h5 className="mb-2 text-2xl md:text-xl lg:text-xl font-bold tracking-tight text-gray-900 ">
                 {value.title}
               </h5>
-            </a>
+            </Link>
             <p className="mb-3 text-sm md:text-xs lg:text-xs text-gray-700 ">
               {value.desc}
             </p>
-            <a
+            <Link
               href="#"
               className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-sm hover:bg-green-800 focus:ring-4 focus:outline-none "
             >
@@ -50,7 +52,7 @@ const Featured = () => {
                   clipRule="evenodd"
                 ></path>
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       ))}

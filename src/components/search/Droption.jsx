@@ -46,6 +46,8 @@ const Droption = () => {
             placeholder="Search"
           />
           <button
+            id="Search"
+            aria-label="Search_btn"
             type="submit"
             className=" h-8 border-1 border-solid border-black bg-green-400 px-4 py2 rounded-sm"
           >
@@ -72,6 +74,8 @@ const Droption = () => {
 
       <div className="flex lg:ml-[75px]  py-8 mt-0">
         <button
+          id="Hide_btn"
+          aria-label="Hide_button"
           onClick={() => setIsOpen((prev) => !prev)}
           className=" py-1 flex items-center "
         >

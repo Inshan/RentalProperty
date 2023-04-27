@@ -50,18 +50,32 @@ const Modal = ({ isVisible, onClose }) => {
     <div className="fixed inset-0 bg-opacity-50 backdrop-blur-sm bg-black min-h-screen flex items-center justify-center z-50">
       <div className=" bg-white w-auto px-4 py-2 rounded-sm pt-4 " ref={ref}>
         <div className=" flex  justify-between px-0  w-96  border-b-2 border-solid border-gray-300 ">
-          <button className="font-bold">login</button>
-          <button onClick={() => onClose()}>
+          <button id="log-btn" aria-label="logIn" className="font-bold">
+            login
+          </button>
+          <button
+            id="cancel "
+            aria-label="Cancel-btn"
+            onClick={() => onClose()}
+          >
             <ImCancelCircle className="text-xl text-red-700" />
           </button>
         </div>
 
         <div className="grid place-items-center py-4 gap-2 border-b-2 border-solid border-gray-300 text-xs ">
-          <button className=" flex items-center  h-10 font-bold  uppercase  px-2 text-white min-w-fit border bg-blue-700 rounded-lg">
+          <button
+            id="fbBtn"
+            aria-label="facebookbtn"
+            className=" flex items-center  h-10 font-bold  uppercase  px-2 text-white min-w-fit border bg-blue-700 rounded-lg"
+          >
             <FaFacebookF className="mx-2  text-lg  font-bold px-1 border-r border-solid border-white" />{" "}
             <span>continue with facebook</span>
           </button>
-          <button className=" flex items-center  h-10  font-bold uppercase px-4 text-white min-w-min bg-red-600 border rounded-lg">
+          <button
+            id="google-btn"
+            aria-label="goggle_btn"
+            className=" flex items-center  h-10  font-bold uppercase px-4 text-white min-w-min bg-red-600 border rounded-lg"
+          >
             <FaGoodreadsG className="mr-4 px-1 font-semibold border-r border-solid border-white text-lg " />{" "}
             <span>continue with google</span>
           </button>

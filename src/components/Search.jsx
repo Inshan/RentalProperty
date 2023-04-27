@@ -11,6 +11,10 @@ const Search = () => {
         <div className="flex items-center justify-around ">
           <div>
             <button
+              id="22"
+              aria-label="btnsearch"
+              role="Search_btn"
+              name="mySearch_btn"
               data-tooltip-target="tooltip-animation"
               type="button"
               className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-12 py-3 text-center"

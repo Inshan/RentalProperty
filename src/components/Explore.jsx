@@ -1,5 +1,6 @@
 import React from "react";
 import Exploreimg from "../../public/images/exploreimg.png";
+import Link from "next/link";
 
 const Explore = () => {
   // console.log(Exploreimg);
@@ -26,12 +27,12 @@ const Explore = () => {
               discover the perfect property for you.
             </p>
             <div className="mt-8">
-              <a
+              <Link
                 href="#"
                 className="bg-gray-900 text-gray-100 px-5 py-3 font-semibold rounded"
               >
                 Start Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>

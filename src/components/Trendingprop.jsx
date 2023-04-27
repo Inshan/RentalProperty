@@ -1,6 +1,8 @@
 import Tdata from "./data/Tdata";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
+import Image from "next/image";
+import Link from "next/link";
 
 // Import Swiper styles
 import "swiper/css";
@@ -28,19 +30,23 @@ const Trendingprop = () => {
           {Tdata.cardData.map((value, index) => (
             <SwiperSlide key={index}>
               <div className="w-full  bg-white border border-gray-200 rounded-lg shadow ">
-                <a href="#">
-                  <img className="rounded-t-lg" src={value.img} alt="" />
-                </a>
+                <Link href="#">
+                  <Image
+                    className="rounded-t-lg"
+                    src={value.img}
+                    alt="firstimage"
+                  />
+                </Link>
                 <div className="p-5">
-                  <a href="#">
+                  <Link href="#">
                     <h5 className="mb-2 text-2xl lg:text-xl font-bold tracking-tight text-gray-900 ">
                       {value.title}
                     </h5>
-                  </a>
+                  </Link>
                   <p className="mb-3 text-xl lg:text-xs text-gray-700 dark:text-gray-400">
                     {value.desc}
                   </p>
-                  <a
+                  <Link
                     href="#"
                     className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-sm hover:bg-green-800 "
                   >
@@ -58,7 +64,7 @@ const Trendingprop = () => {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -89,19 +95,23 @@ export const Trendingprop1 = () => {
           {Tdata.cardData.map((value, index) => (
             <SwiperSlide key={index}>
               <div className="w-full  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                  <img className="rounded-t-lg" src={value.img} alt="" />
-                </a>
+                <Link href="#">
+                  <Image
+                    className="rounded-t-lg"
+                    src={value.img}
+                    alt="secondimage"
+                  />
+                </Link>
                 <div className="p-5">
-                  <a href="#">
+                  <Link href="#">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                       {value.title}
                     </h5>
-                  </a>
+                  </Link>
                   <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                     {value.desc}
                   </p>
-                  <a
+                  <Link
                     href="#"
                     className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
@@ -119,7 +129,7 @@ export const Trendingprop1 = () => {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -149,17 +159,21 @@ export const Trendingprop2 = () => {
           {Tdata.cardData.map((value, index) => (
             <SwiperSlide key={index}>
               <div className="w-11/12  bg-white border border-gray-200 rounded-lg shadow  hover:scale-105 hover:transition-all ">
-                <a href="#">
-                  <img className="rounded-t-lg" src={value.img} alt="" />
-                </a>
+                <Link href="#">
+                  <Image
+                    className="rounded-t-lg"
+                    src={value.img}
+                    alt="firstimage"
+                  />
+                </Link>
                 <div className="p-5">
-                  <a href="#">
+                  <Link href="#">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
                       {value.title}
                     </h5>
-                  </a>
+                  </Link>
                   <p className="mb-3 text-sm text-gray-700 ">{value.desc}</p>
-                  <a
+                  <Link
                     href="#"
                     className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
@@ -177,7 +191,7 @@ export const Trendingprop2 = () => {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>

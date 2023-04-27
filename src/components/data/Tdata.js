@@ -1,8 +1,16 @@
+import Tredpic1 from "../../../public/images/tred/tredpic1.png";
+import Tredpic2 from "../../../public/images/tred/tredpic2.png";
+import Tredpic3 from "../../../public/images/tred/tredpic3.png";
+import Tredpic4 from "../../../public/images/tred/tredpic4.png";
+import Tredpic5 from "../../../public/images/tred/tredpic5.png";
+import Tredpic6 from "../../../public/images/tred/tredpic6.png";
+import Tredpic7 from "../../../public/images/tred/tredpic7.png";
+
 const Tdata = {
   cardData: [
     {
       id: 17,
-      img: "/images/tred/tredpic1.png",
+      img: Tredpic1,
       imgtitle: "Bed room",
       title: "Single Flat",
       category: "House",
@@ -10,7 +18,7 @@ const Tdata = {
     },
     {
       id: 18,
-      img: "/images/tred/tredpic4.png",
+      img: Tredpic4,
       imgtitle: "Bunglow",
       title: " Private Townhouse",
       category: "Apartment",
@@ -18,7 +26,7 @@ const Tdata = {
     },
     {
       id: 19,
-      img: "/images/tred/tredpic3.png",
+      img: Tredpic3,
       imgtitle: "living room",
       title: " Residence",
       category: "Single-Room",
@@ -26,7 +34,7 @@ const Tdata = {
     },
     {
       id: 20,
-      img: "/images/tred/tredpic2.png",
+      img: Tredpic2,
       imgtitle: "High-end Flats",
       title: "High-End Flats",
       category: "House",
@@ -34,7 +42,7 @@ const Tdata = {
     },
     {
       id: 21,
-      img: "/images/tred/tredpic5.png",
+      img: Tredpic5,
       imgtitle: "Elite apartments",
       title: "Elite Apartment",
       category: "Room",
@@ -42,7 +50,7 @@ const Tdata = {
     },
     {
       id: 22,
-      img: "/images/tred/tredpic6.png",
+      img: Tredpic6,
       imgtitle: "Bungalow",
       title: "Bungalow",
       category: "Flat",
@@ -50,7 +58,7 @@ const Tdata = {
     },
     {
       id: 23,
-      img: "/images/tred/tredpic3.png",
+      img: Tredpic3,
       imgtitle: "Elegant Unit",
       title: "Rural Retreat",
       category: "Office-Space",
@@ -58,7 +66,7 @@ const Tdata = {
     },
     {
       id: 24,
-      img: "/images/tred/tredpic7.png",
+      img: Tredpic7,
       imgtitle: "Elite Residences",
       title: "Elite Residences",
       category: "Apartment",
