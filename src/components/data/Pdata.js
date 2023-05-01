@@ -1,13 +1,22 @@
+import Fimg1 from "../../../public/images/fimg/pic1.png";
+import Fimg2 from "../../../public/images/fimg/pic2.png";
+import Fimg3 from "../../../public/images/fimg/pic3.png";
+import Fimg4 from "../../../public/images/fimg/pic4.png";
+import Fimg5 from "../../../public/images/fimg/pic5.png";
+import Fimg6 from "../../../public/images/fimg/pic6.png";
+import Tredpic6 from "../../../public/images/tred/tredpic6.png";
+import Tredpic7 from "../../../public/images/tred/tredpic7.png";
+
 const Pdata = {
   cardData: [
     {
       id: 1,
-      img: "/images/fimg/pic1.png",
+      img: Fimg1,
       imgtitle: "Design Illusions",
-      title: "Fully Furnished House",
+      title: "Furnished House",
       desc: "Spacious one-storey house with modern design, fully furnished, equipped kitchen, comfortable bedrooms, and backyard. ",
       images: [
-        "/images/fimg/pic1.png",
+        Fimg1,
         "/images/fimg/FullyFHouse/pic1.png",
         "/images/fimg/FullyFHouse/pic2.png",
         "/images/fimg/FullyFHouse/pic3.png",
@@ -16,12 +25,12 @@ const Pdata = {
     },
     {
       id: 2,
-      img: "/images/fimg/pic2.png",
+      img: Fimg2,
       imgtitle: "Virtual Worlds",
-      title: "Modern Living Room",
+      title: "Living Room",
       desc: "Experience Practical and Spacious Living with Modern Design in Our Rental Property, Ideal for a Contemporary Lifestyle",
       images: [
-        "/images/fimg/pic2.png",
+        Fimg2,
         "/images/fimg/ModernLiving/pic1.png",
         "/images/fimg/ModernLiving/pic2.png",
         "/images/fimg/ModernLiving/pic3.png",
@@ -30,12 +39,12 @@ const Pdata = {
     },
     {
       id: 3,
-      img: "/images/fimg/pic3.png",
+      img: Fimg3,
       imgtitle: "Arts",
       title: "Lavish Cottage ",
       desc: "Experience opulent living in our stunning cottage for sale, featuring a spacious living room, fully equipped kitchen. ",
       images: [
-        "/images/fimg/pic3.png",
+        Fimg3,
         "/images/fimg/LavishCottage/pic1.png",
         "/images/fimg/LavishCottage/pic2.png",
         "/images/fimg/LavishCottage/pic3.png",
@@ -44,12 +53,12 @@ const Pdata = {
     },
     {
       id: 4,
-      img: "/images/fimg/pic4.png",
+      img: Fimg4,
       imgtitle: "Collictibes",
       title: "Village Living",
       desc: "Experience the charm of village living with our idyllic escape, featuring peaceful surroundings and cozy accommodations.",
       images: [
-        "/images/fimg/pic3.png",
+        Fimg4,
         "/images/fimg/VillageLiving/pic1.png",
         "/images/fimg/VillageLiving/pic2.png",
         "/images/fimg/VillageLiving/pic3.png",
@@ -58,12 +67,12 @@ const Pdata = {
     },
     {
       id: 5,
-      img: "/images/fimg/pic5.png",
+      img: Fimg5,
       imgtitle: "Robotics Arts",
       title: "House on Rent ",
       desc: "Features two bedrooms, fully equipped kitchen and bathroom, spacious backyard, and family-friendly location near amenities.",
       images: [
-        "/images/fimg/pic5.png",
+        { Fimg5 },
         "/images/fimg/HouseRent/pic1.png",
         "/images/fimg/HouseRent/pic2.png",
         "/images/fimg/HouseRent/pic3.png",
@@ -72,12 +81,12 @@ const Pdata = {
     },
     {
       id: 6,
-      img: "/images/fimg/pic6.png",
+      img: Fimg6,
       imgtitle: "Photography",
-      title: "House at Bashundhara",
+      title: "House",
       desc: "Discover modern living in a prime location with our Bashundhara house for rent, featuring spacious rooms and modern amenities. ",
       images: [
-        "/images/fimg/pic6.png",
+        Fimg6,
         "/images/fimg/HouseBasundhara/pic1.png",
         "/images/fimg/HouseBasundhara/pic2.png",
         "/images/fimg/HouseBasundhara/pic3.png",
@@ -86,12 +95,12 @@ const Pdata = {
     },
     {
       id: 7,
-      img: "/images/tred/tredpic6.png",
+      img: Tredpic6,
       imgtitle: "Photography",
       title: "Luxurious house ",
       desc: "Indulge in luxurious living with our stunning house for sale, featuring elegant design, spacious rooms and state-of-the-art amenities.",
       images: [
-        "/images/tred/tredpic6.png",
+        Tredpic6,
         "/images/fimg/Luxiurious/pic1.png",
         "/images/fimg/Luxiurious/pic2.png",
         "/images/fimg/Luxiurious/pic3.png",
@@ -100,12 +109,12 @@ const Pdata = {
     },
     {
       id: 8,
-      img: "/images/tred/tredpic7.png",
+      img: Tredpic7,
       imgtitle: "Photography",
       title: "Elite House",
       desc: "Experience the epitome of elite living with our exclusive house for rent, featuring top-of-the-line amenities and impeccable design.",
       images: [
-        "/images/tred/tredpic7.png",
+        Tredpic7,
         "/images/fimg/Elite/pic1.png",
         "/images/fimg/Elite/pic2.png",
         "/images/fimg/Elite/pic3.png",

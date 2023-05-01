@@ -4,12 +4,15 @@ const Contact = () => {
   return (
     <div>
       {/* component */}
-      <div className=" flex items-top justify-center min-h-screen bg-lime-50 sm:items-center sm:pt-0">
+      <div className=" flex items-top justify-center py-8 bg-lime-50 sm:items-center sm:pt-0">
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
           <div className="mt-4 overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="p-6 mr-2 bg-gray-100  sm:rounded-lg">
-                <h1 className="text-4xl sm:text-5xl text-gray-800  font-extrabold tracking-tight">
+                <h1
+                  data-aos="fade-right"
+                  className="text-4xl sm:text-5xl text-gray-800  font-extrabold tracking-tight"
+                >
                   Connect With Agent
                 </h1>
                 <p className="text-normal text-lg sm:text-2xl font-medium text-gray-600  mt-2">
@@ -123,6 +126,8 @@ const Contact = () => {
                   />
                 </div>
                 <button
+                  id="contact_btn"
+                  aria-label="contact"
                   type="submit"
                   className="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300"
                 >

@@ -1,5 +1,6 @@
 import React from "react";
 import Exploreimg from "../../public/images/exploreimg.png";
+import Link from "next/link";
 
 const Explore = () => {
   // console.log(Exploreimg);
@@ -16,7 +17,12 @@ const Explore = () => {
             />
           </div>
           <div className="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
-            <h2 className="text-3xl text-gray-800 font-bold">
+            <h2
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+              className="text-3xl text-gray-800 font-bold"
+            >
               Looking for your dream
               <span className="text-indigo-600"> property</span>
             </h2>
@@ -26,12 +32,12 @@ const Explore = () => {
               discover the perfect property for you.
             </p>
             <div className="mt-8">
-              <a
+              <Link
                 href="#"
                 className="bg-gray-900 text-gray-100 px-5 py-3 font-semibold rounded"
               >
                 Start Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>

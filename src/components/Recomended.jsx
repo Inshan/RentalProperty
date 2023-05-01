@@ -1,27 +1,32 @@
 import React from "react";
 import Rdata from "../components/data/Rdata";
+import Link from "next/link";
+import Image from "next/image";
 
 const Recomended = () => {
   return (
     <>
       {Rdata.cardData.map((value, index) => (
         <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
           key={index}
           className=" lg:w-64 md:w-80 w-11/12 bg-white border border-gray-200 rounded-lg shadow gap-8 hover:scale-105 hover:transition-all "
         >
-          <a href="#">
-            <img className="rounded-t-lg" src={value.img} alt="img" />
-          </a>
+          <Link href="#">
+            <Image className="rounded-t-lg" src={value.img} alt="linlimage" />
+          </Link>
           <div className="p-5">
-            <a href="#">
+            <Link href="#">
               <h5 className="mb-2 text-2xl  md:text-xl lg:text-xl font-bold tracking-tight text-gray-900 ">
                 {value.title}
               </h5>
-            </a>
+            </Link>
             <p className="mb-3 text-sm md:text-sm lg:text-xs text-gray-700">
               {value.desc}
             </p>
-            <a
+            <Link
               href="#"
               className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-sm hover:bg-green-800 "
             >
@@ -39,7 +44,7 @@ const Recomended = () => {
                   clipRule="evenodd"
                 ></path>
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       ))}
