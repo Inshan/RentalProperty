@@ -12,7 +12,10 @@ import Searchimg from "../../public/images/searchimg.png";
 import Explore from "@/components/Explore";
 import Featured from "@/components/Featured";
 import Recomended from "@/components/Recomended";
-import { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 //import SearchBg from "../../public/images/sbg.png";
 import RentOrBuy, {
   RentOrBuy1,
@@ -21,28 +24,40 @@ import RentOrBuy, {
 } from "@/components/RentOrBuy";
 import Modal from "@/components/modal/Modal";
 
-const index = () => {
+const Index = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <Layout>
-      <div>
+      <div className="scroll-smooth">
         <Hero />
 
         <div
           className="w-full hidden text-center sm:hidden lg:flex bg-no-repeat bg-cover min-h-screen py-0 my-0 "
           style={{ backgroundImage: `url(${Searchimg.src})` }}
         >
-          <div className="flex justify-center w-full mr-52 pt-10">
-            <h1 className=" flex text-5xl  font-bold  ml-80 ">
-              <span className="bg-gray-400 text-center bg-opacity-10 leading-loose p-4 px-8 rounded-md animate-pulse ">
-                Your Ideal Property <br />
-                &nbsp; Awaits You
-              </span>
-            </h1>
+          <div
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+            className="flex justify-end w-full mr-48 pt-20"
+          >
+            <div className="bg-white h-20 rounded-lg w-1/3 grid place-items-center drop-shadow-sm  ">
+              <h1 className="text-3xl opacity-50 font-bold">
+                Your Ideal Property
+              </h1>
+              <h2 className="text-3xl opacity-50 font-bold">await you</h2>
+            </div>
           </div>
         </div>
         <Explore />
         <div className=" pl-8  bg-green-50 mx-0  pb-16 ">
-          <h1 className=" text-2xl font-bold uppercase text-center pb-8 pr-6 ">
+          <h1
+            data-aos="zoom-in"
+            className=" text-2xl font-bold uppercase text-center pb-8 pr-6 "
+          >
             Latest Properties
           </h1>
           <div>
@@ -58,7 +73,7 @@ const index = () => {
           </div>
         </div>
 
-        {/* <div>
+        <div>
           <div className=" hidden lg:flex bg-green-50 px-20 pb-10  ">
             <RentOrBuy />
           </div>
@@ -71,31 +86,46 @@ const index = () => {
           <div className=" flex lg:hidden md:hidden sm:hidden bg-green-50 px-6 ">
             <RentOrBuy3 />
           </div>
-        </div> */}
+        </div>
 
         <Modal />
         <div className="bg-slate-500 ">
-          <h1 className=" text-2xl lg:text-3xl  text-white font-bold uppercase text-center pb-8 pt-12">
+          <h1
+            data-aos="zoom-in"
+            className=" text-2xl lg:text-3xl  text-white font-bold uppercase text-center pb-8 pt-12"
+          >
             Trending Properties
           </h1>
 
-          <div className="flex flex-wrap items-center justify-evenly bg-slate-500  gap-8 px-4 py-0 md:px-10 lg:gap-14 lg:px-16">
+          <div
+            data-aos="zoom-in"
+            className="flex flex-wrap items-center justify-evenly bg-slate-500  gap-8 px-4 py-0 md:px-10 lg:gap-14 lg:px-16"
+          >
             <Featured />
           </div>
         </div>
 
         <div className="bg-slate-500">
-          <h1 className=" text-2xl lg:text-3xl text-white font-bold uppercase text-center pb-8 pt-12">
+          <h1
+            data-aos="zoom-in"
+            className=" text-2xl lg:text-3xl text-white font-bold uppercase text-center pb-8 pt-12"
+          >
             Desirable Properties
           </h1>
 
-          <div className="flex flex-wrap items-center justify-evenly bg-slate-500 gap-4 px-4 py-0 md:px-10 lg:gap-14 lg:px-16 pb-10">
+          <div
+            // data-aos="fade-left"
+            className="flex flex-wrap items-center justify-evenly bg-slate-500 gap-4 px-4 py-0 md:px-10 lg:gap-14 lg:px-16 pb-10"
+          >
             <Recomended />
           </div>
         </div>
 
         <div className="p-8 py-12 mx-5  ">
-          <h1 className="text-3xl font-bold uppercase text-center pb-10">
+          <h1
+            data-aos="zoom-in"
+            className="text-3xl font-bold uppercase text-center pb-10"
+          >
             Realstate &nbsp;
             <span className="offset-1 text-orange-400">Agents</span>
           </h1>
@@ -119,4 +149,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

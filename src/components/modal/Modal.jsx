@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+
 import ClickOutSide from "../Hook/ClickOutSide";
 //import { useState } from "react";
 import { FaFacebookF } from "react-icons/fa";
@@ -48,8 +49,11 @@ const Modal = ({ isVisible, onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-opacity-50 backdrop-blur-sm bg-black min-h-screen flex items-center justify-center z-50">
-      <div className=" bg-white w-auto px-4 py-2 rounded-sm pt-4 " ref={ref}>
-        <div className=" flex  justify-between px-0  w-96  border-b-2 border-solid border-gray-300 ">
+      <div
+        className=" bg-white lg:w-auto md:w-auto sm:w-auto lg:px-4 sm:px-4 md:px-4 mx-8 px-2 py-2 rounded-sm pt-4 min-w-min  "
+        ref={ref}
+      >
+        <div className=" flex  justify-between px-0  min-w-min sm:w-96  border-b-2 border-solid border-gray-300 ">
           <button id="log-btn" aria-label="logIn" className="font-bold">
             login
           </button>

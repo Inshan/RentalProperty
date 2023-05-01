@@ -4,12 +4,15 @@ const Contact = () => {
   return (
     <div>
       {/* component */}
-      <div className=" flex items-top justify-center min-h-screen bg-lime-50 sm:items-center sm:pt-0">
+      <div className=" flex items-top justify-center py-8 bg-lime-50 sm:items-center sm:pt-0">
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
           <div className="mt-4 overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="p-6 mr-2 bg-gray-100  sm:rounded-lg">
-                <h1 className="text-4xl sm:text-5xl text-gray-800  font-extrabold tracking-tight">
+                <h1
+                  data-aos="fade-right"
+                  className="text-4xl sm:text-5xl text-gray-800  font-extrabold tracking-tight"
+                >
                   Connect With Agent
                 </h1>
                 <p className="text-normal text-lg sm:text-2xl font-medium text-gray-600  mt-2">

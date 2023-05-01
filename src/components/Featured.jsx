@@ -16,6 +16,9 @@ const Featured = () => {
     <>
       {Pdata.cardData.map((value, index) => (
         <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
           key={index}
           className="lg:w-64 md:w-80 w-11/12  bg-white border border-gray-200 rounded-lg shadow  gap-20 hover:scale-105 hover:transition-all "
           onClick={() => {

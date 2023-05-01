@@ -1,120 +1,188 @@
-import Link from "next/link";
+//import Link from "next/link";
 import React from "react";
-
+import Bimg from "../../public/images/Banner-2.png";
+import Image from "next/image";
+import Services from "../../public/images/services.png";
+import { BsHouses, BsFullscreen } from "react-icons/bs";
+import Contact from "./Contact";
+import { BsArrowRight } from "react-icons/bs";
+import { HiOutlineCircleStack } from "react-icons/hi2";
+import {
+  MdOutlineProductionQuantityLimits,
+  MdOutlineManageHistory,
+} from "react-icons/md";
+import { IoNewspaperOutline } from "react-icons/io5";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Services_try = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
-      <div>
-        <img src="images/Banner-1.png" />
-        {/* <!-- component --> */}
+      <div className="  " style={{ backgroundImage: `url(${Bimg.src})` }}>
+        <div className="bg-black opacity-70 h-72 flex items-center ">
+          <h1 className="text-white text-3xl  font-semibold md:ml-24  ml-20 lg:ml-28  ">
+            Our Services
+          </h1>
+        </div>
+      </div>
+
+      <div className="  bg-teal-50  ">
         <div
-          className="px-3 md:lg:xl:px-40   border-t border-b py-20 bg-opacity-10"
-          style={{
-            backgroundImage:
-              'url("https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png")',
-          }}
+          data-aos="fade-right"
+          className=" flex flex-wrap md:flex-nowrap lg:flex-nowrap justify-around items-center rounded-sm shadow-sm"
         >
-          <div className="grid grid-cols-1 md:lg:xl:grid-cols-3 group bg-white shadow-xl shadow-neutral-100 border ">
-            <div className="flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b hover:bg-slate-50 cursor-pointer">
-              <img
-                src="images/buy.png"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-              />
-
-              <p className="text-xl font-medium text-slate-700 mt-3">
-                Buy Property
-              </p>
-              <p className="p-2 text-justify mt-2 text-lg text-slate-500">
-                {" "}
-                At Meerako Properties, we offer a comprehensive range of real
-                estate services to help companies find and purchase their ideal
-                properties. Our experienced team can assist with every step of
-                the buying process, from identifying potential properties to
-                negotiating the best price and managing the legal and financial
-                aspects of the transaction.
-              </p>
-            </div>
-            <div className="flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b hover:bg-slate-50 cursor-pointer">
-              <img
-                src="images/sell.png"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              />
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-              <p className="text-xl font-medium text-slate-700 mt-3">
-                Sell Property
-              </p>
-              <p className="p-2 text-justify mt-2 text-lg text-slate-500">
-                Our experienced team can provide you with a detailed analysis of
-                the local real estate market, help you determine the best
-                listing price, and market your property effectively to reach a
-                wide range of potential buyers. We also offer expert guidance on
-                negotiating offers, managing contracts, and ensuring that all
-                legal and financial aspects of the transaction are handled
-                correctly.{" "}
-              </p>
-            </div>
-            <div className="flex flex-col items-center text-center group   md:lg:xl:border-b hover:bg-slate-50 cursor-pointer">
-              <img
-                src="images/rent.png"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
-              />
-
-              <p className="text-xl font-medium text-slate-700 mt-3">
-                Rent Property
-              </p>
-              <p className="p-2 text-justify mt-2 text-lg text-slate-500">
-                {" "}
-                Our experienced team can provide you with a detailed analysis of
-                the local real estate market, help you determine the best
-                listing price, and market your property effectively to reach a
-                wide range of potential buyers. We also offer expert guidance on
-                negotiating offers, managing contracts, and ensuring that all
-                legal and financial aspects of the transaction are handled
-                correctly.{" "}
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-wrap w-full bg-indigo-600 shadow-xl shadow-indigo-200 py-10 px-10 justify-between items-center text-sm">
-            <p className=" text-white">
-              {" "}
-              <span className="md:text-4xl font-medium flex flex-wrap text-xl">
-                <div className="flex-1">Still Confused ?</div>
-              </span>{" "}
-              <br />{" "}
-              <span className="text-lg">
-                Book For Free Career Consultation Today !{" "}
-              </span>
+          <div className="lg:w-1/2 md:w-1/2 xl:w-1/2  w-full  text-left ">
+            <h1 className=" text:xl lg:text-3xl md:text-2xl  font-semibold p-10 lg:pb-10 lg:px-5 opacity-80  ">
+              We provide best property Services
+            </h1>
+            <p className=" px-8 text-xs md:text-sm lg:text-xl lg:px-5 text-justify tracking-tighter opacity-80 ">
+              we are committed to providing exceptional service to our clients.
+              We believe in building long-term relationships with our clients
+              and ensuring that they are satisfied with their experience. Our
+              goal is to become your trusted partner in rental property for
+              life.
             </p>
-            <button
-              id="2"
-              name="mybutton"
-              aria-label="service_button"
-              className="px-3 py-3  font-medium shadow-xl  hover:bg-white duration-150  bg-yellow-400"
-            >
-              BOOK AN APPOINTMENT{" "}
-            </button>
+          </div>
+
+          <div className="text-xl text-black">
+            <div className="py-10 mx-8 grid place-items-center">
+              <Image height={400} width={400} src={Services} />
+            </div>
           </div>
         </div>
       </div>
+
+      <div className="bg-teal-50 drop-shadow-sm lg:p-4 md:p-4 sm:p-2 p-1 ">
+        <div className="text-xl md:text-2xl lg:text-2xl font-bold lg:ml-28 sm:ml-16  md:ml-20 flex items-center justify-center gap-2 ">
+          <h1 data-aos="zoom-in" className="opacity-80">
+            List of services we provide
+          </h1>
+          <span>
+            <BsArrowRight />
+          </span>
+        </div>
+
+        <div className="flex flex-wrap md:flex-nowrap xl:flex-nowrap lg:flex-nowrap justify-between  sm:px-10 md:px-4 px-4 lg:px-20 py-10 gap-8 ">
+          <div
+            data-aos="fade-right"
+            className="min-w-min    md:w-1/2 xl:w-1/2 lg:w-1/2  h-30   bg-white drop-shadow-md  p-4 hover:transition-all  hover:shadow-lg  "
+          >
+            <h1 className="text-xl font-bold pb-4 pl-8  text-orange-500 hover:underline hover:text-orange-300  cursor-pointer ">
+              Property Lisiting
+            </h1>
+            <div className="text-6xl ml-20 pb-2 ">
+              <BsHouses />
+            </div>
+
+            <p className="px-8  self-auto text-xs sm:text-sm md:text-sm lg:text-sm text-justify tracking-tighter opacity-75  ">
+              Providing a database of available rental properties to search
+              through, with details such as location, number of
+              bedrooms/bathrooms, rental price, and photos.
+            </p>
+          </div>
+
+          <div
+            data-aos="fade-left"
+            className=" min-w-min    md:w-1/2  xl:w-1/2  lg:w-1/2     h-30   bg-white drop-shadow-md   p-4 hover:transition-all  hover:shadow-lg "
+          >
+            <h1 className="text-xl font-bold pb-4  pl-8  text-orange-500 hover:underline hover:text-orange-300 cursor-pointer ">
+              Property Sales
+            </h1>
+
+            <div className="text-6xl ml-20 pb-2 ">
+              <MdOutlineProductionQuantityLimits />
+            </div>
+
+            <p className="px-8 text-xs sm:text-sm md:text-sm lg:text-sm text-justify tracking-tighter opacity-75  ">
+              Offering assistance to property owners who are interested in
+              selling their rental property, including property valuation,
+              marketing, and negotiation of sales contracts.
+            </p>
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-right"
+          className="flex flex-wrap md:flex-nowrap lg:flex-nowrap xl:flex-nowrap justify-between md:px-4 sm:px-10 px-8 lg:px-20 py-10 gap-8 "
+        >
+          <div className="min-w-min   md:w-1/2 xl:w-1/2 lg:w-1/2  h-30   bg-white drop-shadow-md  p-4 hover:transition-all  hover:shadow-lg  ">
+            <h1 className="text-xl font-bold pb-4 pl-8 cursor-pointer text-orange-500 hover:underline hover:text-orange-300 ">
+              Lease Agreements
+            </h1>
+            <div className="text-6xl ml-20 pb-2 ">
+              <IoNewspaperOutline />
+            </div>
+
+            <p className="px-8 text-justify tracking-tighter text-xs sm:text-sm md:text-sm lg:text-sm opacity-75 ">
+              Conducting background checks on potential tenants, including
+              credit checks, employment verification, and criminal history
+              checks, to ensure that the tenant is a good fit for the property.
+            </p>
+          </div>
+
+          <div
+            data-aos="fade-left"
+            className="min-w-min   md:w-1/2 xl:w-1/2 lg:w-1/2 h-30   bg-white drop-shadow-md   p-4 hover:transition-all  hover:shadow-lg "
+          >
+            <h1 className="text-xl font-bold pb-4  pl-8 cursor-pointer  text-orange-500 hover:underline hover:text-orange-300 ">
+              Rent Collection
+            </h1>
+
+            <div className="text-6xl ml-20 pb-2 ">
+              <HiOutlineCircleStack />
+            </div>
+
+            <p className="px-8 text-justify tracking-tighter text-xs sm:text-sm md:text-sm lg:text-sm  opacity-75 ">
+              Drafting legally binding lease agreements between the property
+              owner and the tenant, outlining the terms of the rental agreement,
+              including rent payments and security deposit.
+            </p>
+          </div>
+        </div>
+        <div
+          data-aos="fade-right"
+          className="flex flex-wrap md:flex-nowrap lg:flex-nowrap xl:flex-nowrap justify-between md:px-4  sm:px-10 px-4 lg:px-20 py-10 gap-8 "
+        >
+          <div className="min-w-min   md:w-1/2 xl:w-1/2 lg:w-1/2 h-30   bg-white drop-shadow-md  p-4 hover:transition-all  hover:shadow-lg  ">
+            <h1 className="text-xl font-bold pb-4 pl-8  cursor-pointer text-orange-500 hover:underline hover:text-orange-300 ">
+              Property Management
+            </h1>
+            <div className="text-6xl ml-20 pb-2 ">
+              <MdOutlineManageHistory />
+            </div>
+
+            <p className="px-8 text-justify tracking-tighter text-xs sm:text-sm md:text-sm lg:text-sm  opacity-75 ">
+              Conducting regular inspections of rental properties to ensure that
+              they are in good condition and identifying any maintenance or
+              repair issues that need to be addressed.
+            </p>
+          </div>
+
+          <div
+            data-aos="fade-left"
+            className="min-w-min   md:w-1/2 xl:w-1/2 lg:w-1/2  h-30   bg-white drop-shadow-md   p-4 hover:transition-all  hover:shadow-lg "
+          >
+            <h1 className="text-xl font-bold pb-4  pl-8 cursor-pointer  text-orange-500 hover:underline hover:text-orange-300 ">
+              Tenant Screening
+            </h1>
+
+            <div className="text-6xl ml-20 pb-2 ">
+              <BsFullscreen />
+            </div>
+
+            <p className="px-8  text-justify tracking-tighter text-xs sm:text-sm md:text-sm lg:text-sm opacity-75  ">
+              Acting as a liaison between the property owner and tenant,
+              handling communication related to maintenance requests, rent
+              payments, lease renewals, and any other issues that may arise.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <Contact />
     </>
   );
 };

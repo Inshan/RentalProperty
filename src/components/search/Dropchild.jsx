@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import ClickOutSide from "../Hook/ClickOutSide";
 
 import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai";
+import { Input } from "postcss";
 //import { motion } from "framer-motion";
 
 // function useOnClickOutside(ref, handler) {
@@ -35,30 +36,35 @@ import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai";
 //   );
 // }
 
-const Dropchild = ({ name, options }) => {
+const Dropchild = ({ name, options, holder, id }) => {
   const [isOPen, setIsOpen] = useState(false);
-  const [val, setVal] = useState(name);
+  const [val, setVal] = useState("");
 
   const ref = useRef();
 
   ClickOutSide(ref, () => setIsOpen(false));
 
   return (
-    <div className="relative flex flex-col items-center w-[200px] h-10 rounded-lg py-2 px-4  ">
-      <button
-        id="drop"
-        aria-label="drop-btn"
+    <div className="relative flex flex-col items-center w-44 h-10 rounded-sm py-2     ">
+      <div
         onClick={() => setIsOpen((prev) => !prev)}
-        className="bg-blue-400 w-full flex items-center justify-between font-bold text-lg rounded-lg tracking-wider border-4 border-transparent active:border-white duration-300 active:text-white px-4 py-1"
+        className="flex items-center bg-white w-auto rounded-sm px-1 z-0 "
       >
-        {val}
+        <input
+          id="drop"
+          aria-label="drop-btn"
+          defaultValue={""}
+          value={val}
+          placeholder={holder}
+          className="bg-yellow-50 z-0 w-full flex items-center justify-between font-bold text-sm rounded-sm tracking-wider px-4 py-1 focus:ring-0  focus:border-none appearance-none border-none outline-none active:ring-0  active:border-none  "
+        />
 
         {!isOPen ? (
-          <AiOutlineCaretDown className="h-8" />
+          <AiOutlineCaretDown className="h-8 opacity-50 cursor-pointer  " />
         ) : (
-          <AiOutlineCaretUp className="h-8" />
+          <AiOutlineCaretUp className="h-8 opacity-50 cursor-pointer " />
         )}
-      </button>
+      </div>
 
       <div>
         {isOPen ? (
@@ -67,7 +73,7 @@ const Dropchild = ({ name, options }) => {
             className="mt-6 p-4 bg-slate-200 drop-shadow-sm rounded-md overflow-auto transition-all delay-700 duration-1000   initial={{ opacity: 0 }}
         "
           >
-            <ul onClick={() => setIsOpen(false)}>
+            <ul onClick={() => setIsOpen(false)} className="z-50">
               {options.map((option) => (
                 <li
                   key={id}

@@ -17,7 +17,12 @@ const Explore = () => {
             />
           </div>
           <div className="py-12 px-6 max-w-xl lg:max-w-5xl lg:w-1/2">
-            <h2 className="text-3xl text-gray-800 font-bold">
+            <h2
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+              className="text-3xl text-gray-800 font-bold"
+            >
               Looking for your dream
               <span className="text-indigo-600"> property</span>
             </h2>

@@ -1,5 +1,6 @@
 import React from "react";
-import Tdata from "./data/Tdata";
+//import Tdata from "./data/Tdata";
+import Randbimg from "./data/Randbimg";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
@@ -24,19 +25,19 @@ const RentOrBuy = () => {
         modules={[Autoplay, Navigation]}
       >
         <div className="flex flex-wrap gap-10  ">
-          {Tdata.cardData.map((value, index) => (
-            <SwiperSlide key={index}>
+          {Randbimg.map((itr) => (
+            <SwiperSlide key={itr.id}>
               <Link href="/property">
                 <div
                   className=" w-full  overflow-hidden bg-no-repeat bg-cover mb-4 rounded-lg  "
-                  style={{ backgroundImage: `url(${value.img})` }}
+                  style={{ backgroundImage: `url(${itr.img})` }}
                 >
                   <div
                     className="h-48 mx-auto rounded-lg "
                     style={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}
                   >
                     <h1 className="text-xl font-bold text-white  text-center pt-20  ">
-                      {value.category}
+                      {itr.category}
                     </h1>
                   </div>
                 </div>
@@ -66,18 +67,18 @@ export const RentOrBuy1 = () => {
         modules={[Autoplay, Navigation]}
       >
         <div className="flex flex-wrap gap-10  ">
-          {Tdata.cardData.map((value, index) => (
-            <SwiperSlide key={index}>
+          {Randbimg.map((itr) => (
+            <SwiperSlide key={itr.id}>
               <div
                 className=" w-full  overflow-hidden bg-no-repeat bg-cover mb-4 rounded-lg  "
-                style={{ backgroundImage: `url(${value.img})` }}
+                style={{ backgroundImage: `url(${itr.img})` }}
               >
                 <div
                   className="h-48 mx-auto rounded-lg "
                   style={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}
                 >
                   <h1 className="text-xl font-bold text-white  text-center pt-20  ">
-                    {value.category}
+                    {itr.category}
                   </h1>
                 </div>
               </div>
@@ -105,19 +106,19 @@ export const RentOrBuy2 = () => {
         modules={[Autoplay, Navigation]}
       >
         <div className="flex flex-wrap gap-10  ">
-          {Tdata.cardData.map((value, index) => (
-            <SwiperSlide key={index}>
+          {Randbimg.map((itr) => (
+            <SwiperSlide key={itr.id}>
               <Link href={"/property"}>
                 <div
                   className=" w-full  overflow-hidden bg-no-repeat bg-cover mb-4 rounded-lg  "
-                  style={{ backgroundImage: `url(${value.img})` }}
+                  style={{ backgroundImage: `url(${itr.img})` }}
                 >
                   <div
                     className="h-48 mx-auto rounded-lg "
                     style={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}
                   >
                     <h1 className="text-xl font-bold text-white  text-center pt-20  ">
-                      {value.category}
+                      {itr.category}
                     </h1>
                   </div>
                 </div>
@@ -146,19 +147,19 @@ export const RentOrBuy3 = () => {
         modules={[Autoplay, Navigation]}
       >
         <div className="flex flex-wrap gap-10  ">
-          {Tdata.cardData.map((value, index) => (
-            <SwiperSlide key={index}>
+          {Randbimg.map((itr) => (
+            <SwiperSlide key={itr.id}>
               <Link href="/property">
                 <div
                   className=" w-full  overflow-hidden bg-no-repeat bg-cover mb-4 rounded-lg  "
-                  style={{ backgroundImage: `url(${value.img})` }}
+                  style={{ backgroundImage: `url(${itr.img})` }}
                 >
                   <div
                     className="h-48 mx-auto rounded-lg "
                     style={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}
                   >
                     <h1 className="text-xl font-bold text-white  text-center pt-20  ">
-                      {value.category}
+                      {itr.category}
                     </h1>
                   </div>
                 </div>

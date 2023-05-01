@@ -9,6 +9,7 @@ import Trendingprop, {
   Trendingprop2,
 } from "@/components/Trendingprop";
 import Link from "next/link";
+import PropertySearch from "@/components/search/PropertySearch";
 
 const property = () => {
   return (
@@ -21,7 +22,7 @@ const property = () => {
             style={{
               backgroundPosition: "50%",
               backgroundImage: `url(${PropertyBg.src})`,
-              height: 500,
+              height: 350,
             }}
           >
             <div
@@ -45,7 +46,9 @@ const property = () => {
         </section>
         {/*filter block*/}
 
-        <div>
+        <PropertySearch />
+
+        {/* <div>
           <div className="flex flex-wrap mx-48 py-20 justify-around  border-b-2 border-solid border-gray-400  ">
             <div className="flex gap-4 items-center ">
               <h1 className="text-xl font-semibold">Filter By Category :</h1>
@@ -53,13 +56,11 @@ const property = () => {
               <div className="relative " data-te-dropdown-ref>
                 <button
                   className="flex items-center whitespace-nowrap rounded bg-orange-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-orange-400 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-orange-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-orange-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] motion-reduce:transition-none"
-                  
                   id="dropdownMenuButton1"
                   data-te-dropdown-toggle-ref
                   aria-expanded="false"
                   data-te-ripple-init
                   data-te-ripple-color="light"
-                  
                 >
                   Category
                   <span className="ml-2 w-2">
@@ -122,7 +123,6 @@ const property = () => {
                   aria-expanded="false"
                   data-te-ripple-init
                   data-te-ripple-color="light"
-                
                 >
                   Type
                   <span className="ml-2 w-2">
@@ -176,7 +176,7 @@ const property = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* for large Screen */}
         <div className="bg-teal-50 pb-10 ">
@@ -193,7 +193,7 @@ const property = () => {
 
         {/* for mobile Screen */}
 
-        <div className="gap-1 grid lg:hidden xl:hidden place-items-center  mx-auto ml py-8">
+        {/* <div className="gap-1 grid lg:hidden xl:hidden place-items-center  mx-auto ml py-8">
           <section>
             <div className="flex gap-8 flex-wrap justify-center items-center py-8 ">
               <div>
@@ -202,13 +202,11 @@ const property = () => {
               <div className="relative " data-te-dropdown-ref>
                 <button
                   className="flex items-center whitespace-nowrap rounded bg-orange-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] motion-reduce:transition-none"
-                
                   id="dropdownMenuButton1"
                   data-te-dropdown-toggle-ref
                   aria-expanded="false"
                   data-te-ripple-init
                   data-te-ripple-color="light"
-                  
                 >
                   Category
                   <span className="ml-2 w-2">
@@ -266,10 +264,7 @@ const property = () => {
           <div>
             <h1 className="text-xl font-bold text-center">All Properties</h1>
           </div>
-          <section className=" hidden  lg:flex flex-wrap lg:gap-14 items-center justify-between lg:px-4    ">
-            <Featured />
-          </section>
-        </div>
+        </div> */}
       </div>
 
       {/* for mobile screen ended */}

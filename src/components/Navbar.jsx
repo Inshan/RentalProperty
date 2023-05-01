@@ -217,47 +217,15 @@ const Nav1 = ({ isVisible, showmodal }) => {
             <li className="border-b border-gray-400 my-8 uppercase hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in">
               <Link href="/contactpage">Contact</Link>
             </li>
-            <ul className="flex flex-wrap gap-5 border-b border-gray-400 my-8 uppercase hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in">
-              <li className="flex-1 border-b border-gray-400 uppercase hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in">
-                <Link href="/Login">Login</Link>
-              </li>
-              <li>|</li>
-              <li className="border-b border-gray-400 uppercase hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in">
-                <Link href="/Signup">Signup</Link>
-              </li>
-            </ul>
-            <li className="my-8">
-              <div className="flex flex-wrap">
-                <input
-                  type="text"
-                  id="simple-search"
-                  className="flex-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-3 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Search"
-                  required
-                />
-                <button
-                  name="btn-name"
-                  id="navbtn2"
-                  aria-label="btnfornav"
-                  type="submit"
-                  className="p-4 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border hover:bg-gray-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-gray-700 dark:hover:bg-blue-700"
-                >
-                  <svg
-                    className="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
+            <li className="border-b border-gray-400 my-8 uppercase hover:text-blue-600 hover:cursor-pointer transition-all duration-300 hover:ease-in">
+              <button
+                name="searchbar_btn"
+                type="button"
+                className="text-white mt-2 bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                onClick={() => showmodal(true)}
+              >
+                Login / Signup
+              </button>
             </li>
           </ul>
         </div>
